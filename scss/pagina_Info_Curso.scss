@@ -1,0 +1,403 @@
+
+.paginaInfo-Curso  {
+    
+    header {display: flex; 
+        flex-flow: row wrap; 
+        justify-content: center;
+        background-color: $black_75;
+        padding: 40px;}
+
+    section{align-self: center;
+        border-radius: 10px;
+        margin-top: 110px;}
+
+    article {margin: 160px 0px 10px 0px;
+        padding: 50px 10px 30px 10px;
+        border-radius: 20px; 
+        transition: all 4s;}
+    
+    nav {text-align: center;padding:10px 0px;
+        margin:-50px 0px;
+        position:fixed;
+        width:100%;
+        background-color: $black_75;}
+    
+    h2 {font-size: 35px;
+        padding: 20px 0px 20px 10px;
+        background-color: $black_50;
+        text-align: center;
+        border-radius: 20px}
+
+    p   {font-size:25px;
+        margin:10px 20px 0px 20px;
+        padding:50px 10px 40px 10px;
+        border-radius:20px;
+        transition:1s;}
+
+    a   {text-decoration: none;
+        color: lightgray;}    
+        
+    .b1, .b2, .b3, .b4      {font-weight:normal;
+                            transition:1.5s;}
+    
+    
+        .bg-ligth {background-color: rgba(0, 0, 0, 0.397);border-radius: 20px;}
+        
+        .violetbt {
+    
+                p   {opacity: 0;}
+    
+                a   {background-color: $colorCursos;
+                    color: rgb(255, 255, 255);
+                    border: 1px solid darken($colorCursos,20%);
+                    text-shadow: 1px 2px black;
+                    &:hover{background-color: $colorCursosHover;
+                            color: rgb(255, 255, 255) ;
+                            border: 1px solid darken($colorCursosHover,20%);
+                            text-shadow: 1px 2px black;}}  
+                            
+    
+        &:hover p {opacity: 1;color:$colorCursosHover}
+        
+    
+        
+        @keyframes artGreen-Violet {
+
+        10% {background-color: #000000b6; box-shadow: 2px 2px 4px $colorCursosHover;}
+        20% {background-color: #0000009a; box-shadow: 2px 2px 4px $colorCursosHover;}
+        40% {background-color: #00000070;box-shadow: 2px 2px 4px $colorCursos;}
+        60%{background-color: #00000085;box-shadow: 2px 2px 4px $colorCursos;}
+        80% {background-color: #000000a8;}} 
+         
+        &:hover .imgPosition{margin: 20px 0px 0px 100px}
+        
+        &:hover{animation: artGreen-Violet 2s;}
+        background-color: rgba(1, 2, 2, 0.658);color: $colorCursos;border-radius: 20px;}
+    
+        .animdan    {@include animPerson(80px,70px)}
+         
+            
+        .animkira   {@include animPerson(2px,70px)} 
+                        
+        .animjean   {@include animPerson(2px,80px)}
+                  
+        .animjon    {@include animPerson(80px,90px)}
+        
+       
+            
+        .animImg    {
+    
+                    img {transform: scale(2) translateX(-20px); transition: 2s;
+                    &:hover{transform: scale(1); transition: 2s;}}
+    
+                    h5 {opacity: 0; margin-top: 20px;margin-left: 20px;}
+                    
+                    a   {opacity: 0; transition: 0.5s;margin-left: 20px;}  
+                       
+                    p {margin: 0;padding: 20px; transition: 3s;}
+                        
+                transform:  translateY(80px);
+                transition: 2s;
+    
+                &:hover a {opacity: 1; transition: 3s;}
+    
+                &:hover h5 {opacity: 1;}
+    
+                &:hover  img {transform: scale(1); transition: 2s;}
+    
+                &:hover {transform: translateX(0px) translateY(0px);}} 
+            
+        .iconanim {
+    
+            img {transition: 4s;}
+    
+            h3 {transition: 4s;}
+                
+            &:hover img {transform: rotate(360deg);transition: 2s;}
+            &:hover h3 {transform: scale(1.2); transition: 2s;}}   
+        
+        .greenbt {
+            
+            p {opacity: 0;}
+    
+            a {background-color: $colorCursosHover;
+                color: rgb(255, 255, 255);
+                border: 1px solid darken($colorCursosHover,20%);
+                text-shadow: 1px 2px black;
+                &:hover {background-color: $colorCursos;
+                        color: rgb(255, 255, 255);
+                        border: 1px solid darken($colorCursos,20%);
+                        text-shadow: $shadowText;}
+                    
+           }
+    
+        @keyframes artViolet-Green{
+  
+            10% {background-color: #000000b6; box-shadow: 2px 2px 4px $colorCursos;}
+            20% {background-color: #0000009a; box-shadow: 2px 2px 4px $colorCursos;}
+            40% {background-color: #00000070;box-shadow: 2px 2px 4px $colorCursosHover;}
+            60%{background-color: #00000085;box-shadow: 2px 2px 4px $colorCursosHover;}
+            80% {background-color: #000000a8;}}
+
+        &:hover p {opacity: 1; color:$colorCursos}
+        
+        
+        &:hover .imgPosition{margin: 20px 0px 0px 100px}
+        
+        &:hover {animation: artViolet-Green 2s;}
+            
+        background-color: $black_75;color: $colorCursosHover;border-radius: 20px;}
+        
+        .d-flex {margin-bottom: -100px;}
+        
+        .imgPosition {margin: 20px 0px 0px 140px;}
+        
+    .artGreen   {background-color:$black_50;
+                color:$colorCursosHover;
+                &:hover{animation: artViolet-Green 4s;}}
+
+
+    .artViolet {background-color:$black_50;
+                color:$colorCursos;
+            &:hover{animation: artGreen-Violet 4s;}}
+    
+      
+      
+    .navCursos {
+        
+     h1     {font-size: 45px;
+            padding: 10px 0px; 
+            color: $colorCursos;
+            margin: 0;} 
+
+     &:hover    {animation: CursoA 1.5s;
+                color: $colorCursos;}
+
+    &:focus     {padding:5px;
+                outline: solid 3px $colorCursos;
+                transition: 0.1s; 
+                border-radius: 10px;}                    
+                                
+                                                                               
+                               
+     .menuCursos {
+                                    
+    a:focus {padding:5px;
+            outline: solid 3px $colorCursos;
+            transition: 0.1s;
+            border-radius: 10px;}      
+                        
+    a:hover {animation: CursoA 1.5s;
+            color: $colorCursos;}
+                                            
+    list-style: none;
+    display: flex; 
+    flex-flow: row wrap;
+    justify-content: space-around;}}
+                           
+    .main-Curso {
+        
+        section {height: 300px;
+                width: 1400px;
+                margin: 20px;} 
+        
+       
+        .p2:hover   {color:$colorCursosHover;
+                    transition:1s;
+                    background-color:$black_50;}
+
+
+        .p1:hover   {color:$colorCursos;
+                    transition:1s;
+                    background-color:$black_50;}
+            
+        display: flex;
+        flex-flow: row wrap;
+        height: 3250px;}
+        
+    .navInfo{
+
+            h1{font-size: 45px;
+                padding: 20px 0px;
+                margin: 0;
+                color: $colorCursosHover;}
+    
+            .menuInfo       {list-style: none ;
+                    display: flex;
+                    flex-flow: row wrap;
+                    justify-content: space-around;} 
+                      
+            .contInfo  {width: 1200px;}                            
+    
+            .menuInfo a {&:focus {padding:5px; 
+                        outline: solid 3px $colorCursosHover;
+                        transition: 0.1s; 
+                        border-radius: 10px;}
+                        &:hover {animation: infoA 1.5s; 
+                        color:$colorCursosHover;}}
+    
+            .colorTextViolet {color:$colorCursos;}
+            
+            .colorTextGreen {color:$colorCursosHover;}}         
+    
+    .main-Info    {
+          
+      
+    section   {
+            height: 400px;
+            width: 1300px;
+            margin: 20px; 
+            &:hover {animation: infoSec 4s;}} 
+       
+    .p4:hover  {color: $colorCursos;
+                    transition:1s;
+                    background-color:rgba(0, 0, 0, 0.568);}
+
+       
+    .p3:hover   {color:$colorCursosHover;
+                    transition:1s;
+                    background-color:rgba(0, 0, 0, 0.568);}
+
+        display: flex;
+        flex-flow: row wrap;
+        height: 4300px;}        
+     
+
+   
+       
+       
+    
+    
+    
+    
+    margin-bottom: 400px; 
+    background-image: url(../src/multimedia/fondos/fondo-principal.jpg);
+    }
+    
+    
+
+
+
+
+
+  
+ 
+  
+  @keyframes CursoA {
+  
+        10% {color: $colorCursosHover;font-size: 21px;}
+        30% {color: ligthen($colorCursosHover,10%);font-size: 20.5px;}
+        60% {color: ligthen($colorCursos,10%); font-size: 20.8px;}
+        100%{color: $colorCursos;font-size: 20.2px;}
+  
+  }
+  
+  @keyframes infoA {
+  
+        10%   {color: $colorCursos;font-size: 21px;}
+        30%   {color: ligthen($colorCursos,10%);font-size: 20.5px;}
+        60%   {color: ligthen($colorCursosHover,10%); font-size: 20.8px;}
+        100%  {color: $colorCursosHover;font-size: 20.2px;}     
+  
+  }
+  
+  
+  @keyframes sectionPrinci {
+  
+        1% {transform: scale(0.99);box-shadow: 5px 9px 6px rgb(0, 0, 0);}
+        25% {transform: scale(0.96);}
+        50% {transform: scale(0.93);}
+        75% {transform: scale(0.99);}
+        100% {transform: scale(1);box-shadow: 5px 9px 8px rgba(0, 0, 0, 0.555);}
+        
+  
+  }
+  
+
+  @media screen and (min-width:0px) and (max-width:575px) {
+    
+    .paginaInfo-Curso{display: none;}
+
+}  
+
+@media screen and (min-width:576px) and (max-width:768px) {
+    
+    .columnaicon {display: none;}
+    .bootcont {padding-top: -100px;}
+    .paginaInfo-Curso{ 
+
+        .contInfo{
+
+            .col-6{margin: 30px 0px 10px 0px;}
+        }
+        .animImg{transform: scale(1) translateX(0px) translateY(100px); transition: 2s;}
+
+        section{margin-top: 200px;}
+
+       
+
+        .col-10{margin: 50px 0px 50px 50px;}
+
+        .main-Curso{
+
+            section     {height: 600px;
+                        width: 1400px;
+                        margin-bottom: 200px;}
+
+                    
+
+            height: 3250px;    
+
+        }
+        .main-Info{
+
+            #id-Contact {
+
+                div{padding: 40px 0px;text-align: center;margin: 0;}
+                b{padding: 0;margin: 0;font-size: 15px;}
+                a{padding: 0px -30px 0px 0px;margin: 0px -30px 0px 0px;}     
+            
+            }
+
+            section     {height: 600px;
+                        width: 1300px;
+                        margin: 20px; }
+
+            height: 4700px;    
+
+        }
+
+
+        .navCursos h1   {font-size: 30px;padding: 5px;}
+        .navInfo h1   {font-size: 30px;padding: 5px;}
+        .menuInfo   {justify-content: start;
+                    padding: 0;
+                    a   {padding:0px 20px 10px 10px;font-size: 18px;}
+                    li  {margin: 10px 0px;}}
+
+
+
+        .menuCursos {justify-content: start;
+                    padding: 0;
+                    
+                    a {padding:10px 50px 10px 30px;font-size: 18px;}
+                    li  {margin: 5px 0px;}
+                    justify-content: start;
+           
+        }          
+            
+       }
+        
+}  
+
+@media screen and (min-width:769px) and (max-width:1999px) {
+    
+    .paginaInfo-Curso{display: none;}
+
+}  
+
+@media screen and (min-width:1200px) and (max-width:1400px) {
+    
+    .paginaInfo-Curso{display: block;}
+
+}  

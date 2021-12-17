@@ -1,0 +1,1208 @@
+section iframe {
+  border-radius: 20px;
+  width: 450px;
+  height: 350px;
+  border-color: black;
+  margin: 0px 20px;
+  box-shadow: 2px 2px 4px black; }
+
+.imagen-pag {
+  border-radius: 20px;
+  width: 450px;
+  height: 350px;
+  margin: 0;
+  padding: 0;
+  box-shadow: 2px 2px 4px black; }
+
+.grid-container p {
+  transition: 2s; }
+
+.bodyHtml {
+  background-image: url(../src/multimedia/fondos/fondo-html.svg);
+  background-size: 100%;
+  color: #ff5100;
+  text-shadow: 1px 1px #000000; }
+  .bodyHtml h1 {
+    background-color: #e46e00ab;
+    color: white;
+    text-shadow: 1px 1px 3px black; }
+  .bodyHtml p:hover {
+    background-image: linear-gradient(to bottom, rgba(255, 115, 0, 0.164), rgba(151, 68, 0, 0.397));
+    border-radius: 20px;
+    transition: 0.8s;
+    transform: scale(1.008);
+    color: #fdc494; }
+
+.bodyCss {
+  background-image: url(../src/multimedia/fondos/fondo-css.svg);
+  background-size: 200%;
+  color: #80bbff;
+  text-shadow: 1px 1px #000000; }
+  .bodyCss h1 {
+    background-color: #0067dd9b;
+    color: #6fcaff;
+    text-shadow: 1px 1px 3px black; }
+  .bodyCss p:hover {
+    background-image: linear-gradient(to bottom, rgba(17, 0, 255, 0.048), rgba(5, 0, 51, 0.24));
+    border-radius: 20px;
+    transition: 0.8s;
+    transform: scale(1.008);
+    color: #0d014e; }
+
+.bodyJavasc {
+  background-image: url(../src/multimedia/fondos/fondo-javascript.svg);
+  background-size: 300%;
+  color: #999700;
+  text-shadow: 1px 1px #000000;
+  background-position: bottom left; }
+  .bodyJavasc h1 {
+    background-color: #ffee00c9;
+    color: rgba(15, 7, 14, 0.562);
+    text-shadow: 1px 1px 3px black; }
+  .bodyJavasc p:hover {
+    background-image: linear-gradient(to bottom, rgba(255, 251, 0, 0.048), rgba(50, 51, 0, 0.24));
+    border-radius: 20px;
+    transition: 0.8s;
+    transform: scale(1.008);
+    color: #f0d800; }
+  .bodyJavasc h4 {
+    color: #fdd806; }
+
+.bodyReactjs {
+  background-image: url(../src/multimedia/fondos/fondo-react.svg);
+  background-size: 10%;
+  color: #0080a0;
+  text-shadow: 1px 1px #000000; }
+  .bodyReactjs h1 {
+    background-color: #0193a786;
+    color: #140261;
+    text-shadow: 1px 1px 3px black; }
+  .bodyReactjs p:hover {
+    background-image: linear-gradient(to bottom, rgba(0, 4, 255, 0.048), rgba(0, 7, 51, 0.24));
+    border-radius: 20px;
+    transition: 0.8s;
+    transform: scale(1.008);
+    color: #00d4f0; }
+
+@media screen and (min-width: 1400px) {
+  .grid-container {
+    display: none; } }
+
+@media screen and (min-width: 1200px) and (max-width: 1400px) {
+  .grid-container {
+    display: grid;
+    background-size: cover;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 350px);
+    gap: 40px;
+    grid-template-areas: "header header header header"
+ "section section section aside"
+ "footer footer footer aside";
+    padding: 20px;
+    font-size: 23px; }
+    .grid-container .grid-item:first-child {
+      grid-area: header;
+      border-radius: 20px; }
+      .grid-container .grid-item:first-child h1 {
+        margin-top: 3px;
+        box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.479); }
+      .grid-container .grid-item:first-child p {
+        box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.479);
+        border-radius: 20px; }
+    .grid-container .grid-item:nth-child(2) {
+      grid-area: section;
+      border-radius: 20px;
+      margin: 0px 0px 0px 120px;
+      width: 1000px; }
+    .grid-container .grid-item:nth-child(3) {
+      background: linear-gradient(45deg, rgba(32, 32, 32, 0.219), rgba(0, 0, 0, 0.514), rgba(32, 32, 32, 0.698));
+      box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.479);
+      grid-area: aside;
+      width: 100px;
+      height: 230px;
+      border-radius: 20px;
+      margin: 90px 0px 0px 0px; }
+      .grid-container .grid-item:nth-child(3) .volverpags, .grid-container .grid-item:nth-child(3) .login-pags {
+        width: 50px;
+        margin: 30px 0px 30px 27px;
+        padding: 0;
+        border-radius: 30px;
+        background: linear-gradient(45deg, rgba(32, 32, 32, 0.596), rgba(255, 255, 255, 0.493));
+        box-shadow: 2px 2px 4px black; }
+    .grid-container .grid-item:nth-child(4) {
+      box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.479);
+      grid-area: footer;
+      background-color: rgba(0, 0, 0, 0.748);
+      border-radius: 20px;
+      height: 200px;
+      margin: 50px 60px 0px 150px;
+      width: 900px; }
+      .grid-container .grid-item:nth-child(4) h4 {
+        font-size: 40px;
+        text-align: center;
+        border-radius: 20px;
+        margin-top: 10px; }
+      .grid-container .grid-item:nth-child(4) li {
+        list-style: none;
+        margin: 30px 0px 0px 20px; }
+      .grid-container .grid-item:nth-child(4) a {
+        text-decoration: none;
+        color: #eff7ff;
+        background: rgba(0, 0, 0, 0.501);
+        border-radius: 20px;
+        padding: 10px 550px 10px 50px; }
+        .grid-container .grid-item:nth-child(4) a:hover {
+          color: #bb73ff; } }
+
+@media screen and (min-width: 0px) and (max-width: 575px) {
+  .grid-container {
+    display: none; } }
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .bodyJavasc {
+    background-size: 600%;
+    background-position: left bottom; }
+  .bodyReactjs {
+    background-size: 50%; }
+  .bodyCss {
+    background-size: 400%; }
+  .bodyHtml {
+    background-size: 400%; }
+  .general {
+    margin-right: 8%; }
+    .general .grid-container {
+      display: grid;
+      background-size: cover;
+      grid-template-columns: repeat(4, 200px);
+      grid-template-rows: repeat(2, 150px);
+      gap: 50px;
+      grid-template-areas: "header header"
+ "header header "
+ "section section"
+ "footer aside";
+      padding: 20px;
+      font-size: 13px; }
+      .general .grid-container .grid-item:first-child {
+        grid-area: header;
+        border-radius: 20px;
+        width: 600px;
+        height: 375px; }
+        .general .grid-container .grid-item:first-child h1 {
+          padding: 10px 0px;
+          margin-top: 10px;
+          box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.479); }
+        .general .grid-container .grid-item:first-child p {
+          padding: 10px;
+          background-color: rgba(0, 0, 0, 0.041);
+          border-radius: 20px;
+          font-size: 19px;
+          box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.479); }
+      .general .grid-container .grid-item:nth-child(2) {
+        grid-area: section;
+        border-radius: 20px;
+        width: 600px; }
+      .general .grid-container section iframe, .general .grid-container .imagen-pag {
+        width: 500px;
+        height: 200px;
+        margin: 0px 60px 0px 50px;
+        margin-top: 60px;
+        box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.479); }
+      .general .grid-container .grid-item:nth-child(3) {
+        background: linear-gradient(45deg, rgba(32, 32, 32, 0.219), rgba(0, 0, 0, 0.514), rgba(32, 32, 32, 0.698));
+        box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.479);
+        grid-area: aside;
+        width: 50px;
+        border-radius: 20px;
+        margin-left: 300px;
+        margin-top: 20px;
+        height: 150px; }
+        .general .grid-container .grid-item:nth-child(3) .volverpags, .general .grid-container .grid-item:nth-child(3) .login-pags {
+          width: 30px;
+          margin: 20px 0px 20px 10px;
+          background: linear-gradient(45deg, rgba(32, 32, 32, 0.596), rgba(255, 255, 255, 0.493));
+          border-radius: 50%; }
+      .general .grid-container .grid-item:nth-child(4) {
+        background-color: rgba(0, 0, 0, 0.748);
+        border-radius: 20px;
+        grid-area: footer;
+        height: 200px;
+        width: 400px;
+        margin: 0px 0px 0px 100px;
+        box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.479); }
+        .general .grid-container .grid-item:nth-child(4) a {
+          text-decoration: none;
+          color: #eff7ff;
+          background: rgba(0, 0, 0, 0.748);
+          border-radius: 20px;
+          padding: 10px 250px 10px 15px; }
+          .general .grid-container .grid-item:nth-child(4) a:hover {
+            color: #bb73ff; }
+        .general .grid-container .grid-item:nth-child(4) h4 {
+          font-size: 20px;
+          text-align: center;
+          margin-top: 10px; }
+        .general .grid-container .grid-item:nth-child(4) li {
+          margin: 30px 20px 0px 20px;
+          list-style: none; } }
+
+@media screen and (min-width: 769px) and (max-width: 1328px) {
+  .grid-container {
+    display: none; } }
+
+#paginaprincipal {
+  background-image: url(../src/multimedia/fondos/fondo-principal.jpg); }
+  #paginaprincipal .barraNav {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.748);
+    padding: 0px 0px 10.2px 0px;
+    position: fixed;
+    width: 100%;
+    z-index: 2; }
+  #paginaprincipal .titulopag {
+    color: azure;
+    font-size: 50px;
+    display: block;
+    padding: 10px 0px;
+    margin: 0px 0px 10px 0px;
+    background-color: rgba(0, 0, 0, 0.501);
+    border-radius: 0px; }
+  #paginaprincipal .menuPrincipal {
+    margin: 0px 0px 0px 300px;
+    margin: 0px 0px 0px 300px;
+    margin: 0px 0px 0px 300px;
+    margin: 0px 0px 0px 300px;
+    margin: 0px 0px 0px 300px;
+    margin: 0px 0px 0px 300px; }
+    #paginaprincipal .menuPrincipal a {
+      padding: 7px;
+      border-radius: 10px;
+      display: inline;
+      margin: 30px 10px 5px 30px;
+      transition: 1s;
+      outline: solid 2px #00000000; }
+      #paginaprincipal .menuPrincipal a:hover {
+        font-size: 20.3px;
+        background-color: rgba(0, 0, 0, 0.501);
+        transition: 0,65s; }
+    #paginaprincipal .menuPrincipal li {
+      list-style: none; }
+      #paginaprincipal .menuPrincipal li:hover .submenuCursos {
+        visibility: visible;
+        opacity: 1;
+        transition-property: all;
+        transition: 1s; }
+    #paginaprincipal .menuPrincipal > li {
+      display: inline-block;
+      position: relative; }
+    #paginaprincipal .menuPrincipal .button-Cursos {
+      display: inline;
+      color: #9a43fd; }
+      #paginaprincipal .menuPrincipal .button-Cursos:hover {
+        color: #d0a8fe; }
+      #paginaprincipal .menuPrincipal .button-Cursos:focus {
+        outline: solid 2px #d0a8fe;
+        transition: 0.1s; }
+    #paginaprincipal .menuPrincipal .button-html {
+      display: inline;
+      color: #e46e00; }
+      #paginaprincipal .menuPrincipal .button-html:hover {
+        color: #ffa24b; }
+      #paginaprincipal .menuPrincipal .button-html:focus {
+        outline: solid 2px #ffa24b;
+        transition: 0.1s; }
+    #paginaprincipal .menuPrincipal .button-css {
+      display: inline;
+      color: #0067dd; }
+      #paginaprincipal .menuPrincipal .button-css:hover {
+        color: #449bff; }
+      #paginaprincipal .menuPrincipal .button-css:focus {
+        outline: solid 2px #449bff;
+        transition: 0.1s; }
+    #paginaprincipal .menuPrincipal .button-javasc {
+      display: inline;
+      color: #fdd806; }
+      #paginaprincipal .menuPrincipal .button-javasc:hover {
+        color: #fee86b; }
+      #paginaprincipal .menuPrincipal .button-javasc:focus {
+        outline: solid 2px #fee86b;
+        transition: 0.1s; }
+    #paginaprincipal .menuPrincipal .button-reactjs {
+      display: inline;
+      color: #00d4f0; }
+      #paginaprincipal .menuPrincipal .button-reactjs:hover {
+        color: #57ebff; }
+      #paginaprincipal .menuPrincipal .button-reactjs:focus {
+        outline: solid 2px #57ebff;
+        transition: 0.1s; }
+    #paginaprincipal .menuPrincipal .button-login {
+      display: inline;
+      color: #acacac; }
+      #paginaprincipal .menuPrincipal .button-login:hover {
+        color: #dfdfdf; }
+      #paginaprincipal .menuPrincipal .button-login:focus {
+        outline: solid 2px #dfdfdf;
+        transition: 0.1s; }
+    #paginaprincipal .menuPrincipal .submenuCursos {
+      position: absolute;
+      text-align: start;
+      padding: 8px 0px 0px 0px;
+      margin: 5px 0px 0px 0px;
+      visibility: hidden;
+      opacity: 0;
+      transition: 1s;
+      transition-property: all;
+      border-radius: 30px; }
+      #paginaprincipal .menuPrincipal .submenuCursos ul:hover {
+        visibility: visible;
+        opacity: 1; }
+      #paginaprincipal .menuPrincipal .submenuCursos li {
+        padding: 5px 0px;
+        background-color: #00000000; }
+        #paginaprincipal .menuPrincipal .submenuCursos li:hover .submenuCursos {
+          visibility: visible;
+          opacity: 1;
+          transition-property: all;
+          transition: 1s; }
+      #paginaprincipal .menuPrincipal .submenuCursos a {
+        padding: 15px;
+        margin: 0;
+        background-color: rgba(0, 0, 0, 0.748);
+        display: block;
+        text-size-adjust: initial;
+        color: #9a43fd; }
+        #paginaprincipal .menuPrincipal .submenuCursos a:hover {
+          color: #46ffa3;
+          font-size: 21px;
+          transition: 0,45s;
+          background-color: rgba(0, 0, 0, 0.748); }
+  #paginaprincipal #bienvenidosSecc {
+    padding: 140px 0px 0px 0px;
+    margin: 0px 0px 0px 0px; }
+    #paginaprincipal #bienvenidosSecc .bienvenidosArt {
+      padding: 0;
+      margin: 0px 10px 0px 10px;
+      border-radius: 20px;
+      background-color: rgba(0, 0, 0, 0.582);
+      box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.479); }
+      #paginaprincipal #bienvenidosSecc .bienvenidosArt .bienvenidosDiv {
+        background-image: linear-gradient(180deg, rgba(124, 2, 97, 0.39), rgba(71, 0, 119, 0.493), rgba(3, 179, 179, 0.541));
+        padding: 80px 0px;
+        border-radius: 20px; }
+        #paginaprincipal #bienvenidosSecc .bienvenidosArt .bienvenidosDiv .iconsBienvenidos {
+          display: flex;
+          justify-content: center;
+          list-style: none;
+          padding: 10px 0px 0px 0px; }
+          #paginaprincipal #bienvenidosSecc .bienvenidosArt .bienvenidosDiv .iconsBienvenidos img {
+            width: 60px;
+            margin-left: 60px; }
+        #paginaprincipal #bienvenidosSecc .bienvenidosArt .bienvenidosDiv h3 {
+          font-size: 100px;
+          letter-spacing: 4px;
+          padding: 20px 0px;
+          color: transparent;
+          text-align: center;
+          -webkit-background-clip: text;
+          background-clip: text;
+          background-image: linear-gradient(45deg, #cc00a0, #8f02ec, cyan);
+          text-shadow: 5px 2px 7px rgba(0, 0, 0, 0.356); }
+        #paginaprincipal #bienvenidosSecc .bienvenidosArt .bienvenidosDiv h5 {
+          font-size: 30px;
+          letter-spacing: 4px;
+          padding: 20px 0px;
+          margin: 10px 0px 0px 0px;
+          color: transparent;
+          text-align: center;
+          -webkit-background-clip: text;
+          background-clip: text;
+          background-image: linear-gradient(45deg, #cc00a0, #8f02ec, cyan);
+          text-shadow: 5px 2px 7px rgba(0, 0, 0, 0.356); }
+  #paginaprincipal .caja {
+    padding: 130px 0px 0px 0px;
+    margin: 0px;
+    z-index: 1; }
+    #paginaprincipal .caja p {
+      opacity: 0;
+      transition: 2s; }
+    #paginaprincipal .caja img {
+      opacity: 0;
+      transition: 2s;
+      width: 240px;
+      padding: 20px 100px 0px 110px; }
+    #paginaprincipal .caja .back-html {
+      margin: 10px 10px 0px;
+      padding: 33px 0px;
+      background-size: cover;
+      border-radius: 10px;
+      background-image: url(../src/multimedia/fondos/fondo-html.svg);
+      color: #f79b66; }
+    #paginaprincipal .caja .back-css {
+      margin: 10px 10px 0px;
+      padding: 33px 0px;
+      background-size: cover;
+      border-radius: 10px;
+      background-image: url(../src/multimedia/fondos/fondo-css.svg);
+      color: #004ad3; }
+    #paginaprincipal .caja .back-javasc {
+      margin: 10px 10px 0px;
+      padding: 33px 0px;
+      background-size: cover;
+      border-radius: 10px;
+      background-image: url(../src/multimedia/fondos/fondo-javascript.svg);
+      color: black; }
+    #paginaprincipal .caja .back-reactjs {
+      margin: 10px 10px 0px;
+      padding: 33px 0px;
+      background-size: cover;
+      border-radius: 10px;
+      background-image: url(../src/multimedia/fondos/fondo-react.svg);
+      color: #00aeff;
+      background-size: 10%; }
+    #paginaprincipal .caja .html-h2 {
+      background-color: #e46e00;
+      color: white;
+      text-shadow: 1px 1px #000000; }
+    #paginaprincipal .caja .css-h2 {
+      background-color: #0067dd;
+      color: #6fcaff;
+      text-shadow: 1px 1px #000000; }
+    #paginaprincipal .caja .javas-h2 {
+      background-color: #fdd806;
+      color: rgba(15, 7, 14, 0.562);
+      text-shadow: 1px 1px #000000; }
+    #paginaprincipal .caja .reactjs-h2 {
+      background-color: #00d4f0;
+      color: #140261;
+      text-shadow: 1px 1px #000000; }
+    #paginaprincipal .caja .conocemas {
+      color: #c300ff;
+      border-radius: 20px;
+      text-decoration: none;
+      text-align: center;
+      text-shadow: 1px 1px #000000; }
+      #paginaprincipal .caja .conocemas:hover {
+        color: #00ff73; }
+    #paginaprincipal .caja:hover p {
+      opacity: 1;
+      transition: 0.8s; }
+    #paginaprincipal .caja:hover img {
+      opacity: 1;
+      transition: 1.8s; }
+  #paginaprincipal .foterPrincipal {
+    background-color: rgba(0, 0, 0, 0.501);
+    margin: 60px 0px;
+    padding: 30px 0px;
+    width: 100%;
+    position: absolute; }
+    #paginaprincipal .foterPrincipal ul {
+      opacity: 1;
+      transition: 2s;
+      transition-property: all; }
+    #paginaprincipal .foterPrincipal li {
+      list-style: none;
+      padding: 10px;
+      color: rgba(0, 0, 0, 0); }
+    #paginaprincipal .foterPrincipal a {
+      color: white; }
+      #paginaprincipal .foterPrincipal a:hover {
+        font-size: 20.1px;
+        transition: 0.4s; }
+    #paginaprincipal .foterPrincipal .listaH, #paginaprincipal .foterPrincipal .listaUno a:hover, #paginaprincipal .foterPrincipal .listaDos a:hover, #paginaprincipal .foterPrincipal .listaTres a:hover {
+      text-decoration: line-through;
+      font-style: italic; }
+    #paginaprincipal .foterPrincipal .listaUno a:hover {
+      color: #ff4089; }
+    #paginaprincipal .foterPrincipal .listaDos a:hover {
+      color: rgba(148, 66, 255, 0.753); }
+    #paginaprincipal .foterPrincipal .listaTres a:hover {
+      color: springgreen; }
+    #paginaprincipal .foterPrincipal:hover ul {
+      visibility: visible;
+      opacity: 1;
+      transition: 0.8s;
+      transition-property: all; }
+
+@media screen and (min-width: 0px) and (max-width: 575px) {
+  #paginaprincipal {
+    display: none; } }
+
+@media screen and (min-width: 576px) and (max-width: 606px) {
+  .menuPrincipal {
+    padding: 20px;
+    position: relative;
+    right: 50%;
+    width: 100%; }
+    .menuPrincipal li {
+      padding: 6px 0px 10px 0px;
+      margin: 0px 0px 0px -30px; }
+  .foterPrincipal ul {
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+    left: 8%; } }
+
+@media screen and (min-width: 607px) and (max-width: 637px) {
+  .menuPrincipal {
+    padding: 20px;
+    position: relative;
+    right: 45%;
+    width: 100%; }
+    .menuPrincipal li {
+      padding: 6px 0px 10px 0px;
+      margin: 0px 0px 0px -30px; }
+  .foterPrincipal ul {
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+    left: 10%; } }
+
+@media screen and (min-width: 638px) and (max-width: 668px) {
+  .menuPrincipal {
+    padding: 20px;
+    position: relative;
+    right: 40%;
+    width: 100%; }
+    .menuPrincipal li {
+      padding: 6px 0px 10px 0px;
+      margin: 0px 0px 0px -30px; }
+  .foterPrincipal ul {
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+    left: 12%; } }
+
+@media screen and (min-width: 669px) and (max-width: 700px) {
+  .menuPrincipal {
+    padding: 20px;
+    position: relative;
+    right: 35%;
+    width: 100%; }
+    .menuPrincipal li {
+      padding: 6px 0px 10px 0px;
+      margin: 0px 0px 0px -30px; }
+  .foterPrincipal ul {
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+    left: 14%; } }
+
+@media screen and (min-width: 701px) and (max-width: 731px) {
+  .menuPrincipal {
+    padding: 20px;
+    position: relative;
+    right: 30%;
+    width: 100%; }
+    .menuPrincipal li {
+      padding: 6px 0px 10px 0px;
+      margin: 0px 0px 0px -30px; }
+  .foterPrincipal ul {
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+    left: 16%; } }
+
+@media screen and (min-width: 732px) and (max-width: 768px) {
+  .menuPrincipal {
+    padding: 20px;
+    position: relative;
+    right: 25%;
+    width: 100%; }
+    .menuPrincipal li {
+      padding: 6px 0px 10px 0px;
+      margin: 0px 0px 0px -30px; }
+  .foterPrincipal ul {
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+    left: 18%; } }
+
+@media screen and (min-width: 769px) and (max-width: 1999px) {
+  #paginaprincipal {
+    display: none; } }
+
+@media screen and (min-width: 1200px) and (max-width: 1400px) {
+  #paginaprincipal {
+    display: block; }
+    #paginaprincipal .foterPrincipal ul {
+      display: inline-block;
+      padding: 0px 20px 0px 210px;
+      margin: 30px 0px 0px 0px;
+      opacity: 0;
+      transition: 2s;
+      transition-property: all; } }
+
+.bodybox {
+  margin-top: 140px;
+  padding: 0;
+  font-family: "Gemunu Libre", sans-serif;
+  background-image: url(../src/multimedia/fondos/fondo-principal.jpg);
+  background-size: 100%; }
+  .bodybox .box {
+    box-shadow: 2px 2px 4px black;
+    width: 300px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(23, 1, 30, 0.692);
+    text-align: center;
+    border-radius: 20px;
+    z-index: 1; }
+    .bodybox .box h1 {
+      color: #aaaaaa;
+      font-size: 60px;
+      text-transform: uppercase;
+      font-weight: 500;
+      letter-spacing: 7px;
+      text-shadow: 1px 1px rgba(197, 41, 245, 0.692); }
+    .bodybox .box input {
+      font-size: 20px; }
+    .bodybox .box .inputF {
+      color: transparent;
+      border: 0;
+      background: linear-gradient(45deg, rgba(205, 105, 251, 0.609), rgba(253, 10, 51, 0.746));
+      -webkit-background-clip: text;
+      background-clip: text;
+      display: block;
+      margin: 20px auto;
+      font-size: 25px;
+      text-align: center;
+      border: 3px inset #ffffff5e;
+      padding: 14px 10px;
+      width: 200px;
+      outline: none;
+      border-radius: 20px;
+      transition: 0.25s;
+      box-shadow: 2px 2px 4px black;
+      font-family: "Gemunu Libre", sans-serif; }
+      .bodybox .box .inputF:focus {
+        color: white;
+        background: linear-gradient(45deg, rgba(95, 0, 139, 0.609), rgba(160, 0, 27, 0.746));
+        width: 280px;
+        background-color: rgba(0, 0, 0, 0.501); }
+    .bodybox .box input[type="submit"] {
+      font-family: "Gemunu Libre", sans-serif;
+      border: 0;
+      background: none;
+      display: block;
+      margin: 20px auto;
+      text-align: center;
+      border: 3px inset #ffffff5e;
+      padding: 14px 40px;
+      outline: none;
+      color: #ffffff5e;
+      border-radius: 24px;
+      transition: 0.25s;
+      box-shadow: 2px 2px 4px black;
+      cursor: pointer; }
+      .bodybox .box input[type="submit"]:hover {
+        background: linear-gradient(45deg, rgba(95, 0, 139, 0.609), rgba(160, 0, 27, 0.746));
+        color: white;
+        text-shadow: 1px 1px #000000; }
+  .bodybox .iconoslogin img {
+    border: 10px solid rgba(0, 0, 0, 0);
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    margin-left: 400px;
+    border-bottom-left-radius: 40px; }
+  .bodybox .iconoslogin .icono-html:hover {
+    background-color: #993100;
+    transition: 0.2s;
+    box-shadow: 2px 2px 4px black; }
+  .bodybox .iconoslogin .icono-css:hover {
+    background-color: #004799;
+    transition: 0.2s;
+    box-shadow: 2px 2px 4px black; }
+  .bodybox .iconoslogin .icono-javacs:hover {
+    background-color: #999700;
+    transition: 0.2s;
+    box-shadow: 2px 2px 4px black; }
+  .bodybox .iconoslogin .icono-reactjs:hover {
+    background-color: #00576d;
+    transition: 0.2s;
+    box-shadow: 2px 2px 4px black; }
+  .bodybox .volver {
+    width: 30px;
+    padding: 0px;
+    padding-bottom: 1px;
+    margin-top: -62px;
+    margin-left: 780px;
+    background-color: #ffffff5e;
+    border-radius: 20px;
+    z-index: 2;
+    position: absolute;
+    border: 2px inset #ffffff7e; }
+    .bodybox .volver:hover {
+      background: linear-gradient(45deg, rgba(205, 105, 251, 0.609), rgba(253, 10, 51, 0.746));
+      transition: 0.27s; }
+
+@media screen and (min-width: 0px) and (max-width: 575px) {
+  .bodybox {
+    display: none; } }
+
+@media screen and (min-width: 576px) and (max-width: 636px) {
+  .bodybox {
+    background-size: 200%; }
+    .bodybox .iconoslogin ul {
+      position: absolute;
+      top: 25%;
+      right: 82%; }
+    .bodybox .volver {
+      position: absolute;
+      top: 82%;
+      right: 45.5%; } }
+
+@media screen and (min-width: 637px) and (max-width: 697px) {
+  .bodybox {
+    background-size: 200%; }
+    .bodybox .iconoslogin ul {
+      position: absolute;
+      top: 25%;
+      right: 80%; }
+    .bodybox .volver {
+      position: absolute;
+      top: 82%;
+      right: 46%; } }
+
+@media screen and (min-width: 697px) and (max-width: 768px) {
+  .bodybox {
+    background-size: 200%; }
+    .bodybox .iconoslogin ul {
+      position: absolute;
+      top: 25%;
+      right: 78%; }
+    .bodybox .volver {
+      position: absolute;
+      top: 82%;
+      right: 46.5%; } }
+
+@media screen and (min-width: 769px) and (max-width: 1999px) {
+  .bodybox {
+    display: none; } }
+
+@media screen and (min-width: 1200px) and (max-width: 1400px) {
+  .bodybox {
+    display: block; } }
+
+.paginaInfo-Curso {
+  margin-bottom: 400px;
+  background-image: url(../src/multimedia/fondos/fondo-principal.jpg); }
+  .paginaInfo-Curso header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.748);
+    padding: 40px; }
+  .paginaInfo-Curso section {
+    align-self: center;
+    border-radius: 10px;
+    margin-top: 110px; }
+  .paginaInfo-Curso article {
+    margin: 160px 0px 10px 0px;
+    padding: 50px 10px 30px 10px;
+    border-radius: 20px;
+    transition: all 4s; }
+  .paginaInfo-Curso nav {
+    text-align: center;
+    padding: 10px 0px;
+    margin: -50px 0px;
+    position: fixed;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.748); }
+  .paginaInfo-Curso h2 {
+    font-size: 35px;
+    padding: 20px 0px 20px 10px;
+    background-color: rgba(0, 0, 0, 0.501);
+    text-align: center;
+    border-radius: 20px; }
+  .paginaInfo-Curso p {
+    font-size: 25px;
+    margin: 10px 20px 0px 20px;
+    padding: 50px 10px 40px 10px;
+    border-radius: 20px;
+    transition: 1s; }
+  .paginaInfo-Curso a {
+    text-decoration: none;
+    color: lightgray; }
+  .paginaInfo-Curso .b1, .paginaInfo-Curso .b2, .paginaInfo-Curso .b3, .paginaInfo-Curso .b4 {
+    font-weight: normal;
+    transition: 1.5s; }
+  .paginaInfo-Curso .bg-ligth {
+    background-color: rgba(0, 0, 0, 0.397);
+    border-radius: 20px; }
+  .paginaInfo-Curso .violetbt {
+    background-color: rgba(1, 2, 2, 0.658);
+    color: #9a43fd;
+    border-radius: 20px; }
+    .paginaInfo-Curso .violetbt p {
+      opacity: 0; }
+    .paginaInfo-Curso .violetbt a {
+      background-color: #9a43fd;
+      color: white;
+      border: 1px solid #6602d8;
+      text-shadow: 1px 2px black; }
+      .paginaInfo-Curso .violetbt a:hover {
+        background-color: #46ffa3;
+        color: white;
+        border: 1px solid #00df70;
+        text-shadow: 1px 2px black; }
+    .paginaInfo-Curso .violetbt:hover p {
+      opacity: 1;
+      color: #46ffa3; }
+
+@keyframes artGreen-Violet {
+  10% {
+    background-color: #000000b6;
+    box-shadow: 2px 2px 4px #46ffa3; }
+  20% {
+    background-color: #0000009a;
+    box-shadow: 2px 2px 4px #46ffa3; }
+  40% {
+    background-color: #00000070;
+    box-shadow: 2px 2px 4px #9a43fd; }
+  60% {
+    background-color: #00000085;
+    box-shadow: 2px 2px 4px #9a43fd; }
+  80% {
+    background-color: #000000a8; } }
+    .paginaInfo-Curso .violetbt:hover .imgPosition {
+      margin: 20px 0px 0px 100px; }
+    .paginaInfo-Curso .violetbt:hover {
+      animation: artGreen-Violet 2s; }
+  .paginaInfo-Curso .animdan {
+    transform: translateX(80px) translateY(70px);
+    transition: 2s; }
+    .paginaInfo-Curso .animdan:hover {
+      transform: translateX(0px) translateY(0px); }
+  .paginaInfo-Curso .animkira {
+    transform: translateX(2px) translateY(70px);
+    transition: 2s; }
+    .paginaInfo-Curso .animkira:hover {
+      transform: translateX(0px) translateY(0px); }
+  .paginaInfo-Curso .animjean {
+    transform: translateX(2px) translateY(80px);
+    transition: 2s; }
+    .paginaInfo-Curso .animjean:hover {
+      transform: translateX(0px) translateY(0px); }
+  .paginaInfo-Curso .animjon {
+    transform: translateX(80px) translateY(90px);
+    transition: 2s; }
+    .paginaInfo-Curso .animjon:hover {
+      transform: translateX(0px) translateY(0px); }
+  .paginaInfo-Curso .animImg {
+    transform: translateY(80px);
+    transition: 2s; }
+    .paginaInfo-Curso .animImg img {
+      transform: scale(2) translateX(-20px);
+      transition: 2s; }
+      .paginaInfo-Curso .animImg img:hover {
+        transform: scale(1);
+        transition: 2s; }
+    .paginaInfo-Curso .animImg h5 {
+      opacity: 0;
+      margin-top: 20px;
+      margin-left: 20px; }
+    .paginaInfo-Curso .animImg a {
+      opacity: 0;
+      transition: 0.5s;
+      margin-left: 20px; }
+    .paginaInfo-Curso .animImg p {
+      margin: 0;
+      padding: 20px;
+      transition: 3s; }
+    .paginaInfo-Curso .animImg:hover a {
+      opacity: 1;
+      transition: 3s; }
+    .paginaInfo-Curso .animImg:hover h5 {
+      opacity: 1; }
+    .paginaInfo-Curso .animImg:hover img {
+      transform: scale(1);
+      transition: 2s; }
+    .paginaInfo-Curso .animImg:hover {
+      transform: translateX(0px) translateY(0px); }
+  .paginaInfo-Curso .iconanim img {
+    transition: 4s; }
+  .paginaInfo-Curso .iconanim h3 {
+    transition: 4s; }
+  .paginaInfo-Curso .iconanim:hover img {
+    transform: rotate(360deg);
+    transition: 2s; }
+  .paginaInfo-Curso .iconanim:hover h3 {
+    transform: scale(1.2);
+    transition: 2s; }
+  .paginaInfo-Curso .greenbt {
+    background-color: rgba(0, 0, 0, 0.748);
+    color: #46ffa3;
+    border-radius: 20px; }
+    .paginaInfo-Curso .greenbt p {
+      opacity: 0; }
+    .paginaInfo-Curso .greenbt a {
+      background-color: #46ffa3;
+      color: white;
+      border: 1px solid #00df70;
+      text-shadow: 1px 2px black; }
+      .paginaInfo-Curso .greenbt a:hover {
+        background-color: #9a43fd;
+        color: white;
+        border: 1px solid #6602d8;
+        text-shadow: 1px 1px #000000; }
+
+@keyframes artViolet-Green {
+  10% {
+    background-color: #000000b6;
+    box-shadow: 2px 2px 4px #9a43fd; }
+  20% {
+    background-color: #0000009a;
+    box-shadow: 2px 2px 4px #9a43fd; }
+  40% {
+    background-color: #00000070;
+    box-shadow: 2px 2px 4px #46ffa3; }
+  60% {
+    background-color: #00000085;
+    box-shadow: 2px 2px 4px #46ffa3; }
+  80% {
+    background-color: #000000a8; } }
+    .paginaInfo-Curso .greenbt:hover p {
+      opacity: 1;
+      color: #9a43fd; }
+    .paginaInfo-Curso .greenbt:hover .imgPosition {
+      margin: 20px 0px 0px 100px; }
+    .paginaInfo-Curso .greenbt:hover {
+      animation: artViolet-Green 2s; }
+  .paginaInfo-Curso .d-flex {
+    margin-bottom: -100px; }
+  .paginaInfo-Curso .imgPosition {
+    margin: 20px 0px 0px 140px; }
+  .paginaInfo-Curso .artGreen {
+    background-color: rgba(0, 0, 0, 0.501);
+    color: #46ffa3; }
+    .paginaInfo-Curso .artGreen:hover {
+      animation: artViolet-Green 4s; }
+  .paginaInfo-Curso .artViolet {
+    background-color: rgba(0, 0, 0, 0.501);
+    color: #9a43fd; }
+    .paginaInfo-Curso .artViolet:hover {
+      animation: artGreen-Violet 4s; }
+  .paginaInfo-Curso .navCursos h1 {
+    font-size: 45px;
+    padding: 10px 0px;
+    color: #9a43fd;
+    margin: 0; }
+  .paginaInfo-Curso .navCursos:hover {
+    animation: CursoA 1.5s;
+    color: #9a43fd; }
+  .paginaInfo-Curso .navCursos:focus {
+    padding: 5px;
+    outline: solid 3px #9a43fd;
+    transition: 0.1s;
+    border-radius: 10px; }
+  .paginaInfo-Curso .navCursos .menuCursos {
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around; }
+    .paginaInfo-Curso .navCursos .menuCursos a:focus {
+      padding: 5px;
+      outline: solid 3px #9a43fd;
+      transition: 0.1s;
+      border-radius: 10px; }
+    .paginaInfo-Curso .navCursos .menuCursos a:hover {
+      animation: CursoA 1.5s;
+      color: #9a43fd; }
+  .paginaInfo-Curso .main-Curso {
+    display: flex;
+    flex-flow: row wrap;
+    height: 3250px; }
+    .paginaInfo-Curso .main-Curso section {
+      height: 300px;
+      width: 1400px;
+      margin: 20px; }
+    .paginaInfo-Curso .main-Curso .p2:hover {
+      color: #46ffa3;
+      transition: 1s;
+      background-color: rgba(0, 0, 0, 0.501); }
+    .paginaInfo-Curso .main-Curso .p1:hover {
+      color: #9a43fd;
+      transition: 1s;
+      background-color: rgba(0, 0, 0, 0.501); }
+  .paginaInfo-Curso .navInfo h1 {
+    font-size: 45px;
+    padding: 20px 0px;
+    margin: 0;
+    color: #46ffa3; }
+  .paginaInfo-Curso .navInfo .menuInfo {
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around; }
+  .paginaInfo-Curso .navInfo .contInfo {
+    width: 1200px; }
+  .paginaInfo-Curso .navInfo .menuInfo a:focus {
+    padding: 5px;
+    outline: solid 3px #46ffa3;
+    transition: 0.1s;
+    border-radius: 10px; }
+  .paginaInfo-Curso .navInfo .menuInfo a:hover {
+    animation: infoA 1.5s;
+    color: #46ffa3; }
+  .paginaInfo-Curso .navInfo .colorTextViolet {
+    color: #9a43fd; }
+  .paginaInfo-Curso .navInfo .colorTextGreen {
+    color: #46ffa3; }
+  .paginaInfo-Curso .main-Info {
+    display: flex;
+    flex-flow: row wrap;
+    height: 4300px; }
+    .paginaInfo-Curso .main-Info section {
+      height: 400px;
+      width: 1300px;
+      margin: 20px; }
+      .paginaInfo-Curso .main-Info section:hover {
+        animation: infoSec 4s; }
+    .paginaInfo-Curso .main-Info .p4:hover {
+      color: #9a43fd;
+      transition: 1s;
+      background-color: rgba(0, 0, 0, 0.568); }
+    .paginaInfo-Curso .main-Info .p3:hover {
+      color: #46ffa3;
+      transition: 1s;
+      background-color: rgba(0, 0, 0, 0.568); }
+
+@keyframes CursoA {
+  10% {
+    color: #46ffa3;
+    font-size: 21px; }
+  30% {
+    color: ligthen(#46ffa3, 10%);
+    font-size: 20.5px; }
+  60% {
+    color: ligthen(#9a43fd, 10%);
+    font-size: 20.8px; }
+  100% {
+    color: #9a43fd;
+    font-size: 20.2px; } }
+
+@keyframes infoA {
+  10% {
+    color: #9a43fd;
+    font-size: 21px; }
+  30% {
+    color: ligthen(#9a43fd, 10%);
+    font-size: 20.5px; }
+  60% {
+    color: ligthen(#46ffa3, 10%);
+    font-size: 20.8px; }
+  100% {
+    color: #46ffa3;
+    font-size: 20.2px; } }
+
+@keyframes sectionPrinci {
+  1% {
+    transform: scale(0.99);
+    box-shadow: 5px 9px 6px black; }
+  25% {
+    transform: scale(0.96); }
+  50% {
+    transform: scale(0.93); }
+  75% {
+    transform: scale(0.99); }
+  100% {
+    transform: scale(1);
+    box-shadow: 5px 9px 8px rgba(0, 0, 0, 0.555); } }
+
+@media screen and (min-width: 0px) and (max-width: 575px) {
+  .paginaInfo-Curso {
+    display: none; } }
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .columnaicon {
+    display: none; }
+  .bootcont {
+    padding-top: -100px; }
+  .paginaInfo-Curso .contInfo .col-6 {
+    margin: 30px 0px 10px 0px; }
+  .paginaInfo-Curso .animImg {
+    transform: scale(1) translateX(0px) translateY(100px);
+    transition: 2s; }
+  .paginaInfo-Curso section {
+    margin-top: 200px; }
+  .paginaInfo-Curso .col-10 {
+    margin: 50px 0px 50px 50px; }
+  .paginaInfo-Curso .main-Curso {
+    height: 3250px; }
+    .paginaInfo-Curso .main-Curso section {
+      height: 600px;
+      width: 1400px;
+      margin-bottom: 200px; }
+  .paginaInfo-Curso .main-Info {
+    height: 4700px; }
+    .paginaInfo-Curso .main-Info #id-Contact div {
+      padding: 40px 0px;
+      text-align: center;
+      margin: 0; }
+    .paginaInfo-Curso .main-Info #id-Contact b {
+      padding: 0;
+      margin: 0;
+      font-size: 15px; }
+    .paginaInfo-Curso .main-Info #id-Contact a {
+      padding: 0px -30px 0px 0px;
+      margin: 0px -30px 0px 0px; }
+    .paginaInfo-Curso .main-Info section {
+      height: 600px;
+      width: 1300px;
+      margin: 20px; }
+  .paginaInfo-Curso .navCursos h1 {
+    font-size: 30px;
+    padding: 5px; }
+  .paginaInfo-Curso .navInfo h1 {
+    font-size: 30px;
+    padding: 5px; }
+  .paginaInfo-Curso .menuInfo {
+    justify-content: start;
+    padding: 0; }
+    .paginaInfo-Curso .menuInfo a {
+      padding: 0px 20px 10px 10px;
+      font-size: 18px; }
+    .paginaInfo-Curso .menuInfo li {
+      margin: 10px 0px; }
+  .paginaInfo-Curso .menuCursos {
+    justify-content: start;
+    padding: 0;
+    justify-content: start; }
+    .paginaInfo-Curso .menuCursos a {
+      padding: 10px 50px 10px 30px;
+      font-size: 18px; }
+    .paginaInfo-Curso .menuCursos li {
+      margin: 5px 0px; } }
+
+@media screen and (min-width: 769px) and (max-width: 1999px) {
+  .paginaInfo-Curso {
+    display: none; } }
+
+@media screen and (min-width: 1200px) and (max-width: 1400px) {
+  .paginaInfo-Curso {
+    display: block; } }
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Gemunu Libre', sans-serif; }
+  * body {
+    text-align: justify;
+    font-size: 20px; }
+    * body p {
+      padding: 20px;
+      margin: 10px 0px;
+      text-shadow: 1px 1px #000000; }
+    * body h1 {
+      border-radius: 10px;
+      text-align: center;
+      margin-top: -33px; }
+    * body h2 {
+      border-radius: 10px;
+      text-align: center;
+      margin-top: -33px; }
+    * body a {
+      text-decoration: none; }

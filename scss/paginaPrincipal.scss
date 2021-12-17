@@ -1,0 +1,462 @@
+
+#paginaprincipal {
+
+    .barraNav   {display: block;
+                background-color: $black_75;
+                padding: 0px 0px 10.2px 0px ;
+                position: fixed;
+                width: 100%;
+                z-index: 2;
+                
+            }
+
+    .titulopag  {color:$colorTituloPag; font-size:$font-size-title;
+                display: block;
+                padding: 10px 0px;
+                margin: 0px 0px 10px 0px;
+                background-color: $black_50;
+                border-radius: 0px ;}
+
+    .menuPrincipal{
+
+        a   {padding: 7px;
+            border-radius: 10px;
+            display: inline;
+            margin: 30px 10px 5px 30px;
+            transition: 1s;
+            outline: solid 2px $colorNone;
+
+            &:hover {font-size: $font-size-menu-a-hover;
+                    background-color: $black_50;
+                    transition: 0,65s;}}
+
+        li  {list-style: none;
+            &:hover .submenuCursos {visibility: visible;
+                opacity: 1 ;
+                transition-property: all;
+                transition: 1s;}}
+
+        >li {display: inline-block;
+            position: relative;
+           
+        }
+
+        
+            @each $but, $color1 in $butt {
+
+                .button-#{$but}{
+                    display: inline;
+                    color: $color1;
+                    &:hover{color: lighten($color1, 20%);}
+                    &:focus{outline: solid 2px lighten($color1, 20%); transition: 0.1s;}}
+                
+                
+                margin: 0px 0px 0px 300px;}
+                
+    
+        .submenuCursos {
+
+        ul:hover  {visibility: visible; 
+                    opacity: 1;}
+
+        li          {padding: 5px 0px;
+                    background-color: $colorNone;
+                    &:hover .submenuCursos  {visibility: visible;
+                                            opacity: 1 ;
+                                            transition-property: all;
+                                            transition: 1s;}}
+
+        a   {padding: 15px;
+            margin: 0;
+            background-color: $black_75;
+            display: block;
+            text-size-adjust:initial;
+            color: $colorCursos;
+            &:hover {color:$colorCursosHover;
+                    font-size: $font-size-submenu-a;
+                    transition: 0,45s;
+                    background-color: $black_75;}}
+
+        position: absolute;
+        text-align: start;
+        padding:8px 0px 0px 0px;
+        margin: 5px 0px 0px 0px;
+        visibility: hidden;
+        opacity: 0;
+        transition: 1s;
+        transition-property: all;
+        border-radius: 30px;
+        
+        
+
+    
+    
+        }
+     
+   
+    }
+
+   
+    #bienvenidosSecc{
+        .bienvenidosArt{
+        .bienvenidosDiv{
+            
+            .iconsBienvenidos{
+                img{width: 60px;margin-left: 60px;}
+                display: flex;
+                justify-content: center;
+                list-style: none;
+                padding: 10px 0px 0px 0px;
+               
+            }
+            
+            h3 {font-size: 100px;
+                letter-spacing: 4px;
+                padding: 20px 0px; 
+                color:transparent;
+                text-align: center;
+                -webkit-background-clip: text ;
+                background-clip: text ;
+                background-image: linear-gradient(45deg, rgb(204, 0, 160),rgb(143, 2, 236),rgb(0, 255, 255));
+                text-shadow: 5px 2px 7px rgba(0, 0, 0, 0.356),}
+
+            h5{font-size: 30px;
+                letter-spacing: 4px;
+                padding: 20px 0px; 
+                margin: 10px 0px 0px 0px; 
+                color:transparent;
+                text-align: center;
+                -webkit-background-clip: text ;
+                background-clip: text ;
+                background-image: linear-gradient(45deg, rgb(204, 0, 160),rgb(143, 2, 236),rgb(0, 255, 255));
+                text-shadow: 5px 2px 7px rgba(0, 0, 0, 0.356),}    
+            
+                background-image: linear-gradient(180deg, rgba(124, 2, 97, 0.39),rgba(71, 0, 119, 0.493),rgba(3, 179, 179, 0.541)); 
+                padding: 80px 0px;
+                border-radius: 20px;
+               
+               
+            
+            
+        }
+        padding: 0;
+        margin: 0px 10px 0px 10px;
+        border-radius: 20px;
+        background-color: rgba(0, 0, 0, 0.582);
+        box-shadow: $shadowBox2;
+        
+    
+    }
+    
+    
+    
+    
+    padding: 140px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+ }
+    
+    
+    .caja  {
+
+        
+
+        p       {opacity: 0;transition: 2s;}
+               
+        
+        img     {opacity: 0;transition: 2s; width: 240px; padding: 20px 100px 0px 110px;}
+
+      
+
+
+        .back-html      {@include backs (url(../src/multimedia/fondos/fondo-html.svg), $colorHtmlText)}
+
+        .back-css       {@include backs (url(../src/multimedia/fondos/fondo-css.svg), $colorCssText)}
+
+        .back-javasc    {@include backs (url(../src/multimedia/fondos/fondo-javascript.svg), $colorJavascText)}
+
+        .back-reactjs   {@include backs (url(../src/multimedia/fondos/fondo-react.svg), $colorReactjsText);
+                        background-size: 10%;} 
+
+        .html-h2        {@include h2 ($colorHtml,$colorHtmlTitle)}
+
+        .css-h2         {@include h2 ($colorCss,$colorCssTitle)}
+
+        .javas-h2       {@include h2 ($colorJavasc,$colorJavascTitle)}
+
+        .reactjs-h2     {@include h2 ($colorReactjs,$colorReactjsTitle)}
+
+        .conocemas  {color:$colorConocemas;
+                    border-radius:20px;
+                    text-decoration:none;
+                    text-align:center; 
+                    text-shadow:$shadowText;
+                    &:hover {color:$colorConocemasHover}}  
+        padding: 130px 0px 0px 0px;
+        margin: 0px; 
+        z-index: 1;
+        
+        &:hover p {opacity: 1;transition: 0.8s;}   
+        &:hover img {opacity: 1;transition: 1.8s;}   
+       
+        
+        }
+
+
+    .foterPrincipal {
+
+        ul  {
+            opacity: 1;
+            transition: 2s;
+            transition-property: all;}
+
+        li  {list-style: none;
+            padding: 10px;
+            color: $color-footPrinc-li;}
+
+        a   {color: $color-footPrinc-a;
+            &:hover{font-size:$font-size-footer-a-hover;
+                transition: 0.4s;}}
+
+    
+             
+        .listaH {text-decoration: line-through;font-style: italic;}    
+
+        .listaUno{
+                a:hover {@extend .listaH;
+                    color: $color-footPrinc-listaUno-a-hover;}}
+
+        .listaDos{
+            a:hover {@extend .listaH;
+                    color: $color-footPrinc-listaDos-a-hover;}}
+
+        .listaTres{
+            a:hover {@extend .listaH;
+                    color: $color-footPrinc-listaTres-a-hover;}}
+
+        background-color: $black_50;
+        margin: 60px 0px;
+        padding: 30px 0px;
+        width: 100% ;
+        position: absolute;
+        &:hover ul {visibility: visible;
+            opacity: 1;
+            transition: 0.8s;
+            transition-property: all;}
+        
+
+    }
+
+    background-image: url(../src/multimedia/fondos/fondo-principal.jpg);}
+   
+
+
+
+    
+
+@media screen and (min-width:0px) and (max-width:575px) {
+        #paginaprincipal{display: none;}
+      
+}
+@media screen and (min-width:576px) and (max-width:606px) {
+    .menuPrincipal{
+
+
+       li{padding: 6px 0px 10px 0px;
+        margin: 0px 0px 0px -30px;
+        }
+             
+        padding: 20px;
+        position: relative;
+        right: 50%;
+        width: 100%;
+        
+        
+
+        }
+
+    
+        .foterPrincipal{
+            
+
+               
+            ul  {position: relative;
+                display: inline-block;
+                padding: 10px;
+                left: 8%;}
+            
+        }}
+
+
+  
+
+@media screen and (min-width:607px) and (max-width:637px) {
+    .menuPrincipal{
+
+
+       li{padding: 6px 0px 10px 0px;
+        margin: 0px 0px 0px -30px;
+        }
+             
+        padding: 20px;
+        position: relative;
+        right: 45%;
+        width: 100%;
+        
+
+        }
+        .foterPrincipal{
+            
+
+               
+            ul  {position: relative;
+                display: inline-block;
+                padding: 10px;
+                left: 10%;}
+            
+        }
+    
+  
+}
+@media screen and (min-width:638px) and (max-width:668px) {
+    .menuPrincipal{
+
+
+       li{padding: 6px 0px 10px 0px;
+        margin: 0px 0px 0px -30px;
+        }
+             
+        padding: 20px;
+        position: relative;
+        right: 40%;
+        width: 100%;
+        
+
+    }
+    .foterPrincipal{
+            
+
+               
+        ul  {position: relative;
+            display: inline-block;
+            padding: 10px;
+            left: 12%;}
+        
+    }
+
+  
+}
+@media screen and (min-width:669px) and (max-width:700px) {
+    .menuPrincipal{
+
+
+       li{padding: 6px 0px 10px 0px;
+        margin: 0px 0px 0px -30px;
+        }
+             
+        padding: 20px;
+        position: relative;
+        right: 35%;
+        width: 100%;
+        
+
+        }
+
+        .foterPrincipal{
+            
+
+               
+            ul  {position: relative;
+                display: inline-block;
+                padding: 10px;
+                left: 14%;}
+            
+        }
+   
+  
+}
+@media screen and (min-width:701px) and (max-width:731px) {
+    .menuPrincipal{
+
+
+       li{padding: 6px 0px 10px 0px;
+        margin: 0px 0px 0px -30px;
+        }
+             
+        padding: 20px;
+        position: relative;
+        right: 30%;
+        width: 100%;
+        
+
+        }
+
+        .foterPrincipal{
+            
+
+               
+            ul  {position: relative;
+                display: inline-block;
+                padding: 10px;
+                left: 16%;}
+            
+        }
+
+  
+}
+@media screen and (min-width:732px) and (max-width:768px) {
+    .menuPrincipal{
+
+
+       li{padding: 6px 0px 10px 0px;
+        margin: 0px 0px 0px -30px;
+        }
+             
+        padding: 20px;
+        position: relative;
+        right: 25%;
+        width: 100%;
+        
+
+        }
+
+        .foterPrincipal{
+            
+
+               
+            ul  {position: relative;
+                display: inline-block;
+                padding: 10px;
+                left: 18%;}
+            
+        }
+
+  
+}
+@media screen and (min-width:769px) and (max-width:1999px) {
+    #paginaprincipal{display: none;}
+  
+}
+
+@media screen and (min-width:1200px) and (max-width:1400px) {
+    #paginaprincipal{display: block;
+    
+        .foterPrincipal{
+            
+
+               
+            ul  {display:inline-block;
+                padding: 0px 20px 0px 210px;
+                margin: 30px 0px 0px 0px;
+                opacity: 0;
+                transition: 2s;
+                transition-property: all;}
+            
+                     
+
+                
+                
+    
+        }}}
+
+        
+

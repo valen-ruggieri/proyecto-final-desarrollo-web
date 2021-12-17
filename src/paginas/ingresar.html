@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre&display=swap" rel="stylesheet">
+
+    <!-- meta descriptions -->
+    <meta name="description" content="Bienvenidos a la pagina de acceso donde donde te podras registar para poder tener ascceso ilimiotado a todos nuestros cursos y contenidos dentro de la pagina">
+    <meta name="keywords" content="desarrollo web, programar desde cero, cursos programacion, acceso curso, login, usuario, password, registro, ingresar, ">
+    <!--  protocolo open graph -->
+    <meta property="og:title" content="Pagina de Acceso">
+    <meta property="og:type" content="login">
+    <meta property="og:url" content="/src/paginas/ingresar.html">
+    <meta property="og:image" content="https://i.ibb.co/ZztYsb6/icon-login.png">
+  
+    <title>Pagina de Acceso</title>
+    <!-- icono de la pagina -->
+    <link rel="shortcut icon" href="https://i.ibb.co/ZztYsb6/icon-login.png">
+    <!-- vinculacion de html con css -->
+    <link rel="stylesheet" href="/css/main.css">
+    <!-- vinculacion de html con fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre&display=swap" rel="stylesheet">
+</head>
+
+<!-- cuerpo de la pagina -->
+<body class="bodybox">
+
+    <!-- barra de iconoc con enlaces -->
+    <nav class="iconoslogin">
+
+        <ul>
+
+        <!-- iconos de enlace a cada pagina secundaria -->
+        <li><a  href="../paginas/html.html"><img class="icono-html"src="https://i.ibb.co/5sWVX0w/icon-html.png " alt="icono html"></a></li> 
+        <li><a  href="../paginas/css.html"><img class="icono-css" src="https://i.ibb.co/0pL4ty1/icon-css.png" alt="icono css" ></a></li>
+        <li><a   href="../paginas/javascript.html"><img class="icono-javacs"src="https://i.ibb.co/f4tDQG6/icon-java.png" alt="icono javascript" ></a></li>
+        <li><a  href="../paginas/reactjs.html"><img class="icono-reactjs" src="https://i.ibb.co/McxQRnR/icon-react.png" alt="icono react js"></a></li>  
+    
+        </ul>  
+
+    </nav>
+
+    <!-- icono para volver a la pagina principal-->
+    <article>
+
+        <a href="/Index.html"><img class="volver " src="https://i.ibb.co/Cbc7MpR/volver-login.png" alt="icono volver" ></a>
+
+    </article>
+
+    <!--  seccion de caja de formulario -->
+    <section>
+
+        <!-- formulario de ingreso -->
+        <form class="box" action="/Index.html" method="post">
+
+            <!-- titulo de formulario -->
+            <h1>Login</h1>
+            <!-- casilleros de ingreso de texto en formulario -->
+            <input type="text" name="user" placeholder="Usuario" class="inputF">
+            <input type="password" name="password" placeholder="Cotraseña" class="inputF" >
+            <!-- boton de ingreso y envio de formulario -->
+            <input type="submit" name="Login" value="Ingresar" href="/Index.html" >
+
+        </form>
+
+    </section>
+
+    </body>
+
+</html>

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="shortcut icon" href="https://i.ibb.co/5RcnV8n/icon-principal.png" >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- meta descriptions -->
+    <meta name="description" content="Bienvenidos a la academia de desarrollo web donde aprenderas a programar utilizando herramientas como html, css, react js y javascript, y realizar nuestros otros cursos con la mejor salida laboral del mercado actual">
+    <meta name="keywords" content="desarrollo web, programar desde cero, cursos programacion, cursos diseño ux/ui, cursos marketing, cursos backend, cursos diseño grafico, diseño ux, diseño ui, marketing digital ">
+    <meta property="og:title" content="Academia De Desarollo Web">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="/Index.html">
+    <meta property="og:image" content="https://i.ibb.co/5RcnV8n/icon-principal.png">
+    <title> Academia de desarrollo web | Inicio </title>
+
+</head>
+<!-- 
+
+    
+    Valentin Ruggieri
+    Comision: 16705
+    profesor: Nicolas Seguro
+    tutora: Loana Torres
+    
+-->
+
+<!-- cuerpo de pagina principal -->
+<body id="paginaprincipal">
+
+    <!-- header con cada seccion de la pagina linkeado a su posicion -->
+    <header class="menu">
+
+        <!-- barra de navegacion sobre la pagina principal -->
+        <nav class="barraNav">
+
+            <!-- titulo pagina principal -->
+            <h1 class="titulopag"> Academia De Desarollo Web </h1>
+
+            <!-- botones de enlace para moverse dentreo de la pagina principal en las secciones e ingresar -->
+            <ul class="menuPrincipal">  
+                
+                <li><a class="button-html"  href="#html">HTMl</a></li>
+                <li><a class="button-css"  href="#css">CSS</a></li>
+                <li><a class="button-javasc" href="#javascript">JAVASCRIPT</a></li>
+                <li><a class="button-reactjs" href="#reactjs">REACT.JS</a></li>
+                <li><a class="button-Cursos" href="/src/paginas/cursos.html"> CURSOS </a>
+                    <ul class="submenuCursos">
+                        
+                        <li><a href="./src/paginas/cursos.html#id-uxui"> Diseño ux/ui </a></li>
+                        <li><a  href="./src/paginas/cursos.html#id-DevWeb" > Desarrollo Web </a></li>
+                        <li><a  href="./src/paginas/cursos.html#id-DataA" > Data Analytics </a></li>
+                        <li><a href="./src/paginas/cursos.html#id-BackEnd"> Back-End </a></li>
+                        <li><a href="./src/paginas/cursos.html#id-MarkDig"> Otros </a></li>
+                    </ul>   
+                </li>
+                <li><a class="button-login" href="./src/paginas/ingresar.html">INGRESAR</a></li>
+
+            </ul>
+            
+            
+        
+        </nav>
+
+    </header>
+
+    <!-- contenedeor de secciones de html/css/js/react -->
+    <main id="main">
+
+   <section  id="bienvenidosSecc" data-aos="fade" data-aos-duration="600" data-aos-delay="400">
+        
+        <article class=" bienvenidosArt ">
+
+            <div class=" bienvenidosDiv ">
+
+                <h3 data-aos="fade-left" data-aos-duration="800" data-aos-delay="600" >Comenza tu carrera en tecnologia</h3> 
+                <h5 data-aos="fade-right" data-aos-duration="800" data-aos-delay="600">Aprende a programar desde cero y capacitate para lo que se viene.</h5> 
+                <ul class="iconsBienvenidos">
+                    <li><img data-aos="fade" data-aos-duration="800" data-aos-delay="1200" src="https://i.ibb.co/cQmnf42/html-5.png" alt="iconHtml" ></li>
+                    <li><img data-aos="fade" data-aos-duration="800" data-aos-delay="1400" src="https://i.ibb.co/CvrsyCL/css-3.png" alt="iconCss"></li>
+                    <li><img data-aos="fade" data-aos-duration="800" data-aos-delay="1600" src="https://i.ibb.co/VjJ5z4Y/js-1.png" alt="iconJs"></li>
+                    <li><img data-aos="fade" data-aos-duration="800" data-aos-delay="1800" src="https://i.ibb.co/T1VPwNp/physics.png" alt="iconReact"></li>
+                </ul>
+            </div>
+
+        </article>
+
+   </section>     
+    <!-- seccion de html -->
+    <section class="caja" id="html">
+
+
+        <article class="back-html  animBg" data-aos="zoom-in" data-aos-delay="300" data-aos-duration="300">
+        <!-- titulo de seccion -->
+        <h2 class="html-h2">HTML</h2>
+        <!-- imagen de fondo de seccion -->
+        <img src="https://i.ibb.co/nkJvWj0/imagen-html.png"   title="imagen html" alt="imagen html"/>
+        <!-- articulo de que da una breve descripcion de html -->
+        <p>HTML (Lenguaje de Marcas de Hipertexto, del inglés HyperText Markup Language) es el componente más básico de la Web. Define el significado y la estructura del contenido web. Además de HTML, generalmente se utilizan otras tecnologías para describir la apariencia/presentación de una página web (CSS) o la funcionalidad/comportamiento (JavaScript).
+            <!-- linkeo a la pagina donde se desarolla mas el cotenido -->
+            <a class="conocemas" href="./src/paginas/html.html" target="_blank">conoce mas..</a> 
+        </p> 
+        </article>
+    </section> 
+
+    <!-- seccion de css -->
+    <section  class="caja" id="css">  
+
+        <article class="back-css  animBg" data-aos="zoom-in" data-aos-delay="600" data-aos-duration="400">
+        <!-- titulo de seccion -->
+        <h2 class="css-h2">CSS</h2>
+        <!-- imagen de fondo de seccion -->
+        <img src="https://i.ibb.co/6PKYHy6/imagen-css.png" title="imagen css" alt="imagen css"/>
+        <!-- articulo de que da una breve descripcion de css -->
+        <p> Hojas de Estilo en Cascada (del inglés Cascading Style Sheets) o CSS es el lenguaje de estilos utilizado para describir la presentación de documentos HTML o XML (en-US) (incluyendo varios languages basados en XML como SVG, MathML o XHTML). CSS describe como debe ser renderizado el elemento estructurado en la pantalla, en papel, en el habla o en otros medios.
+            <!-- linkeo a la pagina donde se desarolla mas el cotenido -->
+            <a class="conocemas" href="./src/paginas/css.html" target="_blank">conoce mas..</a>    
+        </p>
+        </article>
+
+    </section>
+
+    <!-- seccion de javascript -->
+    <section class="caja" id="javascript">
+
+        <article class="back-javasc animBg" data-aos="zoom-in" data-aos-delay="600" data-aos-duration="400" >
+            <!-- titulo de seccion -->
+            <h2 class="javas-h2">JavaScript</h2>
+            <!-- imagen de fondo de seccion -->
+            <img src="https://i.ibb.co/hywnGmj/imagen-java.png"  title="imagen javascript" alt="imagen javascript"/>  
+            <!-- articulo de que da una breve descripcion de javascript -->
+            <p>JavaScript (JS) es un lenguaje de programación ligero, interpretado, o compilado justo-a-tiempo (just-in-time) con funciones de primera clase. Si bien es más conocido como un lenguaje de scripting (secuencias de comandos) para páginas web, y es usado en muchos entornos fuera del navegador, tal como Node.js, Apache CouchDB y Adobe Acrobat. JavaScript es un lenguaje de programación basada en prototipos, multiparadigma, de un solo hilo, dinámico, con soporte para programación orientada a objetos, imperativa y declarativa.
+                <!-- linkeo a la pagina donde se desarolla mas el cotenido -->
+                <a class="conocemas" href="./src/paginas/javascript.html" target="_blank">conoce mas..</a>
+            </p>
+        </article>
+
+    </section> 
+
+    <!-- seccion de react js -->
+    <section class="caja" id="reactjs">
+
+        <article class="back-reactjs animBg"data-aos="zoom-in" data-aos-delay="400" data-aos-duration="400">
+            <!-- titulo de seccion -->
+            <h2 class="reactjs-h2" >React Js</h2>
+            <!-- imagen de fondo de seccion -->
+            <img src="https://i.ibb.co/McxQRnR/icon-react.png"   title="imagen reactjs" alt="imagen reactjs"/>
+            <!-- articulo de que da una breve descripcion de react js -->
+            <p>Como su eslogan oficial señala, React es una biblioteca para construir interfaces de usuario. React no es un framework — ni siquiera se limita a la web. React es utilizado con otras bibliotecas para renderizar en ciertos entornos. Por ejemplo, React Native puede usarse para desarrollar aplicaciones móviles; React 360 permite crear aplicaciones de realidad virtual; además de otras posibilidades.
+                <!-- linkeo a la pagina donde se desarolla mas el cotenido -->
+                <a class="conocemas" href="./src/paginas/reactjs.html" target="_blank">conoce mas..</a>    
+            </p>
+        </article>
+
+    </section>
+
+    </main>
+
+    <!-- pie de pagina principal -->
+    <footer class="foterPrincipal" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="600">
+         
+
+
+        <!-- listas pie de pagina -->
+        <ul class="listaUno">
+
+            <!-- enlaces de listas -->
+            <li>   <a href="./src/paginas/informacion.html#id-QSomos" > ¿Quienes somos? </a> </li>
+            <li>    <a href="./src/paginas/informacion.html#id-Contact" > Contactanos   </a> </li>
+            <li>   <a href="./src/paginas/informacion.html#id-Noticias" > Noticias      </a> </li>
+            <li>   <a href="./src/paginas/informacion.html#id-DondEst" > Donde estamos  </a> </li>
+            <li>   <a href="./src/paginas/informacion.html#id-Seguinos" > Seguinos      </a> </li>
+        </ul >
+        
+        <ul class="listaDos" >
+
+            <li>    <a href="./src/paginas/informacion.html#id-UltNov" > Ultimas Novedades  </a> </li>
+            <li>    <a href="./src/paginas/informacion.html#id-Cursos" > Cursos             </a> </li>
+            <li>    <a href="./src/paginas/informacion.html#id-Talleres" > Talleres         </a> </li>
+            <li>    <a href="./src/paginas/informacion.html#id-Foros" > Foros               </a> </li>
+            <li>    <a href="./src/paginas/informacion.html#id-Charlas" >  Charlas          </a> </li>
+
+        </ul>
+
+        
+        <ul class="listaTres">
+
+            <li>    <a href="./src/paginas/cursos.html#id-uxui" > Diseño ux/ui      </a> </li>
+            <li>    <a href="./src/paginas/cursos.html#id-DevWeb" > Desarrollo Web  </a> </li>
+            <li>    <a href="./src/paginas/cursos.html#id-DataA" > Data Analytics   </a> </li>
+            <li>    <a href="./src/paginas/cursos.html#id-BackEnd" > Back-End       </a> </li>
+            <li>    <a href="./src/paginas/cursos.html#id-MarkDig" > Otros          </a> </li>
+
+        </ul>
+
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+</body>
+
+</html>

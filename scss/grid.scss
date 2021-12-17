@@ -1,0 +1,224 @@
+
+
+section iframe    {border-radius: 20px;
+    width: 450px;
+    height:350px;
+    border-color: $black_0;
+    margin: 0px 20px;
+    box-shadow: $shadowBox;} 
+
+.imagen-pag     {border-radius: 20px;
+width: 450px;
+height:350px;
+margin: 0;
+padding: 0;
+box-shadow: $shadowBox;}
+
+
+.grid-container p {transition: 2s;}  
+
+.bodyHtml {@include bodys($bg-h1-html,$colorHtmlTitle,$bg-gradient-html,$color-p-html,$bg-img-html,100%,$colorHtmlHover)}
+
+.bodyCss {@include bodys($bg-h1-css,$colorCssTitle,$bg-gradient-css,$color-p-css,$bg-img-css,200%, lighten($colorCssHover, 25%))}
+
+.bodyJavasc {@include bodys($bg-h1-javasc,$colorJavascTitle,$bg-gradient-javasc,$color-p-javasc,$bg-img-javasc,300%,darken($colorJavascHover, 20%));
+            background-position: bottom left;
+            h4 {color: $colorJavasc;}}
+
+
+
+.bodyReactjs {@include bodys($bg-h1-reactjs,$colorReactjsTitle,$bg-gradient-reactjs,$color-p-reactjs,$bg-img-reactjs,10%,darken($colorReactjsHover,20%))}
+
+
+@media screen and (min-width: 1400px) {
+
+.grid-container {display: none;}} 
+
+@media screen and (min-width: 1200px) and (max-width: 1400px) {
+
+
+.grid-container {
+
+
+.grid-item:first-child {
+    h1 {margin-top: 3px;box-shadow: $shadowBox2; }                        
+
+
+    p {box-shadow:$shadowBox2;border-radius: 20px;}
+
+grid-area: header;
+border-radius: 20px;}
+
+.grid-item:nth-child(2) {grid-area: section;
+                border-radius: 20px;
+                margin: 0px 0px 0px 120px;
+                width: 1000px;}
+
+.grid-item:nth-child(3){ 
+
+.volverpags, .login-pags   {width: 50px;
+                            margin: 30px 0px 30px 27px;
+                            padding: 0;
+                            border-radius: 30px;
+                            background: $icons-grid-gradient;
+                            box-shadow: $shadowBox;
+                            }
+     
+background:$aside-grid-gradient; 
+box-shadow: $shadowBox2;
+grid-area: aside;
+width: 100px;
+height: 230px;
+border-radius: 20px;
+margin: 90px 0px 0px 0px;
+}
+
+.grid-item:nth-child(4) {
+
+h4 {font-size: 40px;
+text-align: center;
+
+border-radius: 20px;
+margin-top:10px}
+
+li {list-style: none;
+margin: 30px 0px 0px 20px ;}
+
+a   {text-decoration: none;
+color: $a-grid;
+background: $black_50;
+border-radius: 20px;
+padding: 10px 550px 10px 50px;
+&:hover { color: $a-grid-hover; }}
+
+
+box-shadow:$shadowBox2;
+grid-area: footer;
+background-color: $black_75;
+border-radius: 20px;
+height: 200px;
+margin: 50px 60px 0px 150px;
+width: 900px;}
+
+
+display: grid;
+background-size: cover; 
+grid-template-columns: repeat(4,1fr);
+grid-template-rows: repeat(4,350px);
+gap: 40px;
+grid-template-areas:
+"header header header header"
+"section section section aside"
+"footer footer footer aside";
+padding: 20px;
+font-size: 23px;}}
+
+
+
+@media screen and (min-width: 0px) and (max-width: 575px) {
+
+    .grid-container {display: none;}}
+
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+
+.bodyJavasc{background-size: 600%;
+            background-position: left bottom;}
+.bodyReactjs{background-size: 50%;}
+.bodyCss{background-size: 400%;}
+.bodyHtml{background-size: 400%;}
+.general {
+.grid-container {
+
+.grid-item:first-child  {
+
+h1 {padding: 10px 0px;
+    margin-top: 10px;
+    box-shadow: $shadowBox2;
+    
+}
+
+p   {padding: 10px; 
+    background-color: rgba(0, 0, 0, 0.041);
+    border-radius: 20px;
+font-size: 19px;
+box-shadow: $shadowBox2;} 
+
+grid-area: header;
+border-radius: 20px;
+width: 600px;
+height: 375px;}
+
+.grid-item:nth-child(2) {grid-area: section;
+                    border-radius: 20px;
+                    width: 600px;}
+
+section iframe , .imagen-pag    {width: 500px;
+                            height: 200px;
+                            margin: 0px 60px 0px 50px ;
+                            margin-top: 60px;
+                            box-shadow: $shadowBox2}
+
+.grid-item:nth-child(3) {
+
+.volverpags, .login-pags  {
+    
+width: 30px;margin: 20px 0px 20px 10px;
+background: $icons-grid-gradient;
+border-radius: 50%;}
+background: $aside-grid-gradient;
+box-shadow: $shadowBox2;
+grid-area: aside;
+width: 50px;
+border-radius: 20px;
+margin-left: 300px;
+margin-top: 20px;
+height: 150px;}
+
+
+.grid-item:nth-child(4) { 
+
+a   {text-decoration: none;
+        color: $a-grid;
+        background: $black_75;
+        border-radius: 20px;
+        padding: 10px 250px 10px 15px;
+        &:hover { color: $a-grid-hover; }}                       
+
+h4 {font-size: 20px;text-align: center;margin-top: 10px;}  
+
+li {margin: 30px 20px 0px 20px;
+    list-style: none;}
+    
+background-color: $black_75;
+border-radius: 20px;    
+grid-area: footer;
+height: 200px;
+width: 400px;
+margin: 0px 0px 0px 100px;
+box-shadow: $shadowBox2;
+}
+
+
+display: grid;
+background-size: cover; 
+grid-template-columns: repeat(4,200px);
+grid-template-rows: repeat(2,150px);
+gap: 50px;
+grid-template-areas:
+"header header"
+"header header "
+"section section"
+"footer aside";
+padding: 20px;
+font-size: 13px;}
+
+margin-right: 8%;
+
+}}
+
+@media screen and (min-width: 769px) and (max-width: 1328px) {
+
+    .grid-container {display: none;}}
+
+

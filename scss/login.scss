@@ -1,0 +1,151 @@
+.bodybox{
+
+    .box{
+
+        h1{color:$colorTitleLoginPage;
+            font-size:60px;
+            text-transform:uppercase;
+            font-weight:500;
+            letter-spacing:7px;
+            text-shadow:1px 1px $colorLoginPage;
+            }
+
+        input {font-size:20px;}
+        
+        .inputF {color:transparent;
+            border:0;
+            background:$bg-gradient-login2;
+            -webkit-background-clip: text;
+            display:block;
+            margin:20px auto;
+            font-size: 25px;
+            text-align:center;
+            border:3px inset $colorLoginPage2;
+            padding:14px 10px;
+            width:200px;
+            outline:none;
+            border-radius:20px;
+            transition:0.25s;
+            box-shadow: $shadowBox; 
+            font-family:$font-fam-login;
+            &:focus{color:$colorTextLoginPage;
+                background: $bg-gradient-login;
+                width:280px;
+                background-color:$black_50;}} 
+        
+
+        input[type = "submit"]{font-family:$font-fam-login;
+            border:0;
+            background:none;
+            display:block;
+            margin:20px auto;
+            text-align:center;
+            border:3px inset $colorLoginPage2;
+            padding:14px 40px;
+            outline:none;
+            color:$colorLoginPage2;
+            border-radius:24px;
+            transition:0.25s;
+            box-shadow: $shadowBox; 
+            cursor:pointer;
+            &:hover{background: $bg-gradient-login;
+                color:$colorTextLoginPage;
+                text-shadow:$shadowText}}
+
+                box-shadow: $shadowBox; 
+                width:300px;
+                padding:40px;
+                position:absolute;
+                top:50%;
+                left:50%;
+                transform:translate(-50%,-50%);
+                background: darken($colorLoginPage, 50%);
+                text-align:center;
+                border-radius:20px;
+                z-index:1;           
+
+
+        }     
+                              
+
+    .iconoslogin {
+
+        img {border:10px solid rgba(0, 0, 0, 0);
+            width:40px;
+            height:40px;
+            padding:10px;
+            margin-left:400px;
+            border-bottom-left-radius:40px;
+            }
+        .icono-html:hover{background-color: darken($colorHtmlHover, 20% ); transition:0.2s;box-shadow: $shadowBox;}
+        .icono-css:hover {background-color: darken($colorCssHover, 20% );transition:0.2s;box-shadow: $shadowBox;} 
+        .icono-javacs:hover{background-color:darken($colorJavascHover, 20% ) ;transition:0.2s;box-shadow: $shadowBox;}  
+        .icono-reactjs:hover{background-color: darken($colorReactjsHover, 30% );transition:0.2s;box-shadow: $shadowBox;} 
+
+
+    }
+    .volver {width:30px;
+        padding:0px;
+        padding-bottom:1px;
+        margin-top:-62px;
+        margin-left:780px;
+        background-color:#ffffff5e;
+        border-radius:20px;
+        z-index:2;
+        position:absolute;
+        border:2px inset #ffffff7e;
+        &:hover{background:$bg-gradient-login2;
+            transition:0.27s;}}
+
+           
+    margin-top:140px;
+    padding:0;
+    font-family:$font-fam-login;
+    background-image: url(../src/multimedia/fondos/fondo-principal.jpg);
+    background-size: 100%;
+    
+     
+
+    }          
+    
+    @media screen and (min-width: 0px) and (max-width:575px) {
+
+        .bodybox{display:none}
+        
+    }
+      
+    @media screen and (min-width: 576px) and (max-width:636px) {
+
+        
+        @include mediaQ (82%,45.5%)
+
+        
+    }
+
+    @media screen and (min-width:637px) and (max-width:697px) {
+        
+
+        @include mediaQ (80%,46%)
+       
+    }
+
+    @media screen and (min-width:697px) and (max-width:768px) {
+        
+
+        @include mediaQ (78%,46.5%)
+       
+     }
+      
+     
+    @media screen and (min-width: 769px) and (max-width:1999px) {
+
+        .bodybox{display:none}
+        
+    }
+      
+    @media screen and (min-width: 1200px) and (max-width:1400px) {
+
+        .bodybox{display: block;}
+        
+    }
+

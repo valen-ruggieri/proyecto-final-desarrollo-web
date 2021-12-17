@@ -1,0 +1,88 @@
+@import "variables";
+
+
+
+@mixin  backs ($bg-image,$color-bck ) {
+    margin: 10px 10px 0px;
+    padding: 33px 0px;
+    background-size:cover;
+    border-radius: 10px;
+    background-image: ($bg-image);
+    color: $color-bck;
+}
+
+
+@mixin h2 ($color-h2 , $title-h2 ){
+
+    background-color: $color-h2;
+    color: $title-h2;
+    text-shadow: $shadowText;
+    
+}
+
+@mixin mediaQ ($rightIconsLog, $rightVolver,){
+    .bodybox{
+
+        .iconoslogin{
+ 
+         ul  {position: absolute;
+             top:25%;
+             right: $rightIconsLog;}}
+ 
+        .volver  {position:absolute;
+                 top: 82%;
+                 right: $rightVolver;} 
+             
+             
+         background-size: 200%;}
+ 
+     }
+
+
+@mixin animPerson ($transformX,$transformY ){
+
+    transform: translateX($transformX) translateY($transformY);
+    transition: 2s;
+    &:hover {transform: translateX(0px) translateY(0px);}
+    
+}  
+
+
+@mixin bodys ($bg-h1, $color-h1, $bg-p-img, $color-p, $bg-img, $bg-img-size, $color-body) {
+
+    
+    h1  {background-color: $bg-h1; 
+    color: $color-h1;text-shadow: 1px 1px 3px $black_0;}  
+    
+    p:hover {background-image:$bg-p-img ;
+    border-radius: 20px;
+    transition: 0.8s;
+    transform: scale(1.008);
+    color: $color-p;}
+    
+    
+    background-image:$bg-img;
+    background-size: $bg-img-size;
+    color: $color-body;
+    text-shadow: $shadowText;
+    
+}
+    
+
+
+
+$butt: (
+
+    Cursos: $colorCursos,
+    html: $colorHtml ,
+    css:$colorCss,
+    javasc:$colorJavasc,
+    reactjs:$colorReactjs,
+    login: $colorLogin,
+   
+   
+
+);
+
+
+
