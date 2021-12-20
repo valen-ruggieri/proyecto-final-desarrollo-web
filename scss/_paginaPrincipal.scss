@@ -2,19 +2,17 @@
 #paginaprincipal {
 
     .barraNav   {display: block;
-                background-color: $black_75;
+            background:linear-gradient(10deg, rgb(0, 0, 0),rgba(0, 0, 0, 0.863), rgba(124, 2, 98, 0.548),rgba(71, 0, 119, 0.692),rgba(3, 179, 179, 0.541)); 
                 padding: 0px 0px 10.2px 0px ;
                 position: fixed;
+                box-shadow: $shadowBox2;
                 width: 100%;
                 z-index: 2;
                 
             }
 
-    .titulopag  {color:$colorTituloPag; font-size:$font-size-title;
+    .titulopag  {color:$colorTituloPag; 
                 display: block;
-                padding: 10px 0px;
-                margin: 0px 0px 10px 0px;
-                background-color: $black_50;
                 border-radius: 0px ;}
 
     .menuPrincipal{
@@ -22,11 +20,10 @@
         a   {padding: 7px;
             border-radius: 10px;
             display: inline;
-            margin: 30px 10px 5px 30px;
             transition: 1s;
             outline: solid 2px $colorNone;
 
-            &:hover {font-size: $font-size-menu-a-hover;
+            &:hover {
                     background-color: $black_50;
                     transition: 0,65s;}}
 
@@ -50,8 +47,9 @@
                     &:hover{color: lighten($color1, 20%);}
                     &:focus{outline: solid 2px lighten($color1, 20%); transition: 0.1s;}}
                 
-                
-                margin: 0px 0px 0px 300px;}
+
+                z-index: 2;
+                }
                 
     
         .submenuCursos {
@@ -102,7 +100,7 @@
         .bienvenidosDiv{
             
             .iconsBienvenidos{
-                img{width: 60px;margin-left: 60px;}
+                
                 display: flex;
                 justify-content: center;
                 list-style: none;
@@ -110,9 +108,9 @@
                
             }
             
-            h3 {font-size: 100px;
-                letter-spacing: 4px;
-                padding: 20px 0px; 
+            h2 {
+                
+                 
                 color:transparent;
                 text-align: center;
                 -webkit-background-clip: text ;
@@ -120,7 +118,7 @@
                 background-image: linear-gradient(45deg, rgb(204, 0, 160),rgb(143, 2, 236),rgb(0, 255, 255));
                 text-shadow: 5px 2px 7px rgba(0, 0, 0, 0.356),}
 
-            h5{font-size: 30px;
+            h3{
                 letter-spacing: 4px;
                 padding: 20px 0px; 
                 margin: 10px 0px 0px 0px; 
@@ -151,7 +149,7 @@
     
     
     
-    padding: 140px 0px 0px 0px;
+    
     margin: 0px 0px 0px 0px;
  }
     
@@ -163,7 +161,7 @@
         p       {opacity: 0;transition: 2s;}
                
         
-        img     {opacity: 0;transition: 2s; width: 240px; padding: 20px 100px 0px 110px;}
+        img     {opacity: 0;transition: 2s; width: 240px; padding: 20px 0px 0px 110px;}
 
       
 
@@ -177,13 +175,13 @@
         .back-reactjs   {@include backs (url(../src/multimedia/fondos/fondo-react.svg), $colorReactjsText);
                         background-size: 10%;} 
 
-        .html-h2        {@include h2 ($colorHtml,$colorHtmlTitle)}
+        .html-h4        {@include h4 ($colorHtml,$colorHtmlTitle)}
 
-        .css-h2         {@include h2 ($colorCss,$colorCssTitle)}
+        .css-h4        {@include h4 ($colorCss,$colorCssTitle)}
 
-        .javas-h2       {@include h2 ($colorJavasc,$colorJavascTitle)}
+        .javas-h4       {@include h4 ($colorJavasc,$colorJavascTitle)}
 
-        .reactjs-h2     {@include h2 ($colorReactjs,$colorReactjsTitle)}
+        .reactjs-h4     {@include h4 ($colorReactjs,$colorReactjsTitle)}
 
         .conocemas  {color:$colorConocemas;
                     border-radius:20px;
@@ -205,7 +203,7 @@
     .foterPrincipal {
 
         ul  {
-            opacity: 1;
+            opacity: 0;
             transition: 2s;
             transition-property: all;}
 
@@ -214,7 +212,7 @@
             color: $color-footPrinc-li;}
 
         a   {color: $color-footPrinc-a;
-            &:hover{font-size:$font-size-footer-a-hover;
+            &:hover{
                 transition: 0.4s;}}
 
     
@@ -253,185 +251,213 @@
 
     
 
-@media screen and (min-width:0px) and (max-width:575px) {
+@media screen and (min-width:0px) and (max-width:349px) {
         #paginaprincipal{display: none;}
       
 }
+@media screen and (min-width:350px) and (max-width:450px){
+body {margin-right: 0px;}
+.titulopag{font-size: 28px;margin: 0px 20px 0px 0px;padding: 10px;}
+.bienvenidosDiv{
+
+    img{width: 30px; margin-left: 20px;}
+    h2{font-size: 40px;letter-spacing: 2px;}
+    h3{font-size: 20px;}
+}
+
+#bienvenidosSecc{ padding: 150px 0px 0px 0px;}
+
+.menuPrincipal{
+
+    a{font-size: 12px;margin: 0px 30px 0px 0px ;}
+    li{padding: 0;
+    margin: 0px 0px 0px -30px;}
+    
+    padding: 0px;
+    position: relative;
+    left: 15%;
+    width: 100%;}
+
+
+.foterPrincipal{
+ 
+
+    
+    ul  {position: relative;
+        display: inline-block;
+        padding: 10px;
+        left: 6%;}
+    a{font-size: 12px}
+    &:hover ul {visibility: visible;
+        opacity: 1;
+        transition: 0.8s;
+        transition-property: all;}}    
+    
+}
+@media screen and (min-width:450px) and (max-width:575px) {
+    
+        .titulopag{font-size: 28px;margin: 0px 30px 0px 0px;padding: 10px;}
+        .bienvenidosDiv{
+
+            img{width: 30px; margin-left: 20px;}
+            h2{font-size: 40px;letter-spacing: 2px;}
+            h3{font-size: 20px;}
+        }
+
+        #bienvenidosSecc{ padding: 150px 0px 0px 0px;}
+
+        .menuPrincipal{
+
+            a{font-size: 12px;margin: 0px 40px 0px 0px ;}
+            li{padding: 0;
+            margin: 0px 0px 0px -30px;}
+            
+            padding: 0px;
+            position: relative;
+            left: 20%;
+            width: 100%;}
+
+ 
+        .foterPrincipal{
+         
+
+            
+            ul  {position: relative;
+                display: inline-block;
+                padding: 20px;
+                left: 17%;}
+            a{font-size: 12px} 
+            
+            &:hover ul {visibility: visible;
+                opacity: 1;
+                transition: 0.8s;
+                transition-property: all;}   
+            
+     }}
+
+
 @media screen and (min-width:576px) and (max-width:606px) {
-    .menuPrincipal{
 
+    .titulopag{font-size: 38px;margin: 0px 20px 0px 10px;padding: 10px;}
+    .bienvenidosDiv{
 
-       li{padding: 6px 0px 10px 0px;
-        margin: 0px 0px 0px -30px;
-        }
-             
-        padding: 20px;
-        position: relative;
-        right: 50%;
-        width: 100%;
-        
-        
-
-        }
-
-    
-        .foterPrincipal{
-            
-
-               
-            ul  {position: relative;
-                display: inline-block;
-                padding: 10px;
-                left: 8%;}
-            
-        }}
-
-
-  
-
-@media screen and (min-width:607px) and (max-width:637px) {
-    .menuPrincipal{
-
-
-       li{padding: 6px 0px 10px 0px;
-        margin: 0px 0px 0px -30px;
-        }
-             
-        padding: 20px;
-        position: relative;
-        right: 45%;
-        width: 100%;
-        
-
-        }
-        .foterPrincipal{
-            
-
-               
-            ul  {position: relative;
-                display: inline-block;
-                padding: 10px;
-                left: 10%;}
-            
-        }
-    
-  
-}
-@media screen and (min-width:638px) and (max-width:668px) {
-    .menuPrincipal{
-
-
-       li{padding: 6px 0px 10px 0px;
-        margin: 0px 0px 0px -30px;
-        }
-             
-        padding: 20px;
-        position: relative;
-        right: 40%;
-        width: 100%;
-        
-
+        img{width: 40px; margin-left: 30px;}
+        h2{font-size: 43px;letter-spacing: 2px;}
+        h3{font-size: 20px;}
     }
+
+    #bienvenidosSecc{ padding: 150px 0px 0px 0px;}
+
+    .menuPrincipal{
+
+            a{font-size: 16px;margin: 0px 30px 0px 0px ;}
+            li{padding: 0;
+            margin: 0px 0px 0px -30px;}
+            
+            padding: 0px;
+            position: relative;
+            left: 20%;
+            width: 100%;}
+
+ 
     .foterPrincipal{
+         
+
             
-
-               
-        ul  {position: relative;
-            display: inline-block;
-            padding: 10px;
-            left: 12%;}
-        
-    }
-
-  
-}
-@media screen and (min-width:669px) and (max-width:700px) {
-    .menuPrincipal{
-
-
-       li{padding: 6px 0px 10px 0px;
-        margin: 0px 0px 0px -30px;
-        }
-             
-        padding: 20px;
-        position: relative;
-        right: 35%;
-        width: 100%;
-        
-
-        }
-
-        .foterPrincipal{
-            
-
-               
             ul  {position: relative;
                 display: inline-block;
-                padding: 10px;
-                left: 14%;}
+                padding: 18px;
+                left: 17%;}
+            a{font-size: 15px;}
+            &:hover ul {visibility: visible;
+                opacity: 1;
+                transition: 0.8s;
+                transition-property: all;}}}
+
+
+  
+
+@media screen and (min-width:607px) and (max-width:687px) {
+    .titulopag{font-size: 38px;margin: 0px 10px 0px 0px;padding: 10px;}
+    .bienvenidosDiv{
+
+        img{width: 30px; margin-left: 20px;}
+        h2{font-size: 40px;letter-spacing: 2px;}
+        h3{font-size: 20px;}
+    }
+
+    #bienvenidosSecc{ padding: 150px 0px 0px 0px;}
+
+    .menuPrincipal{
+
+            a{font-size: 16px;margin: 0px 30px 0px 0px ;}
+            li{padding: 0;
+            margin: 0px 0px 0px -30px;}
             
-        }
+            padding: 0px;
+            position: relative;
+            left: 24%;
+            width: 100%;}
+
+ 
+    .foterPrincipal{
+         
+
+            
+            ul  {position: relative;
+                display: inline-block;
+                padding: 20px;
+                left: 19%;}
+            a{font-size: 15px;}
+            &:hover ul {visibility: visible;
+                opacity: 1;
+                transition: 0.8s;
+                transition-property: all;}}
+  
+}
+
+@media screen and (min-width:688px) and (max-width:769px) {
+    .titulopag{font-size: 38px;margin: 0px 45px 0px 0px;padding: 10px;}
+    .bienvenidosDiv{
+
+        img{width: 50px; margin-left: 20px;}
+        h2{font-size: 40px;letter-spacing: 2px;}
+        h3{font-size: 20px;}
+    }
+
+    #bienvenidosSecc{ padding: 150px 0px 0px 0px;}
+
+    .menuPrincipal{
+
+            a{font-size: 16px;margin: 0px 30px 0px 0px ;}
+            li{padding: 0;
+            margin: 0px 0px 0px -30px;}
+            
+            padding: 0px;
+            position: relative;
+            left: 25%;
+            width: 100%;}
+
+ 
+    .foterPrincipal{
+         
+
+            
+            ul  {position: relative;
+                display: inline-block;
+                padding: 20px;
+                left: 19%;}
+            a{font-size: 15px;}
+        
+            &:hover ul {visibility: visible;
+                opacity: 1;
+                transition: 0.8s;
+                transition-property: all;}}
    
   
 }
-@media screen and (min-width:701px) and (max-width:731px) {
-    .menuPrincipal{
 
 
-       li{padding: 6px 0px 10px 0px;
-        margin: 0px 0px 0px -30px;
-        }
-             
-        padding: 20px;
-        position: relative;
-        right: 30%;
-        width: 100%;
-        
-
-        }
-
-        .foterPrincipal{
-            
-
-               
-            ul  {position: relative;
-                display: inline-block;
-                padding: 10px;
-                left: 16%;}
-            
-        }
-
-  
-}
-@media screen and (min-width:732px) and (max-width:768px) {
-    .menuPrincipal{
-
-
-       li{padding: 6px 0px 10px 0px;
-        margin: 0px 0px 0px -30px;
-        }
-             
-        padding: 20px;
-        position: relative;
-        right: 25%;
-        width: 100%;
-        
-
-        }
-
-        .foterPrincipal{
-            
-
-               
-            ul  {position: relative;
-                display: inline-block;
-                padding: 10px;
-                left: 18%;}
-            
-        }
-
-  
-}
 @media screen and (min-width:769px) and (max-width:1999px) {
     #paginaprincipal{display: none;}
   
@@ -440,23 +466,42 @@
 @media screen and (min-width:1200px) and (max-width:1400px) {
     #paginaprincipal{display: block;
     
-        .foterPrincipal{
-            
-
-               
-            ul  {display:inline-block;
-                padding: 0px 20px 0px 210px;
-                margin: 30px 0px 0px 0px;
-                opacity: 0;
-                transition: 2s;
-                transition-property: all;}
-            
-                     
-
-                
-                
+        .titulopag{font-size: 60px;margin: 0px 45px 0px 0px;padding: 10px;}
+        .bienvenidosDiv{
     
-        }}}
+            img{width: 50px; margin-left: 20px;}
+            h2{font-size: 60px;letter-spacing: 2px;}
+            h3{font-size: 30px;}
+        }
+    
+        #bienvenidosSecc{ padding: 150px 0px 0px 0px;}
+    
+        .menuPrincipal{
+    
+                a{font-size: 20px;margin: 0px 50px 0px 0px ;}
+                li{padding: 0;
+                margin: 0px 0px 0px -30px;}
+                
+                padding: 0px;
+                position: relative;
+                left: 30%;
+                width: 100%;}
+    
+     
+        .foterPrincipal{
+             
+    
+                
+                ul  {position: relative;
+                    display: inline-block;
+                    padding: 0px 230px 0px 0px;
+                    left: 20%;}
+                a{font-size: 20px;}
+                &:hover ul {visibility: visible;
+                    opacity: 1;
+                    transition: 0.8s;
+                    transition-property: all;}}
+       }}
 
         
 

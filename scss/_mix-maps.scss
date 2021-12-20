@@ -12,11 +12,12 @@
 }
 
 
-@mixin h2 ($color-h2 , $title-h2 ){
+@mixin h4 ($color-h4 , $title-h4 ){
 
-    background-color: $color-h2;
-    color: $title-h2;
+    background-color: $color-h4;
+    color: $title-h4;
     text-shadow: $shadowText;
+    font-size: 30px;
     
 }
 

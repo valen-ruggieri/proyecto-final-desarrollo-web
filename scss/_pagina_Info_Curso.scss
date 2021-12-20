@@ -7,12 +7,9 @@
         background-color: $black_75;
         padding: 40px;}
 
-    section{align-self: center;
-        border-radius: 10px;
-        margin-top: 110px;}
+    
 
-    article {margin: 160px 0px 10px 0px;
-        padding: 50px 10px 30px 10px;
+    article {
         border-radius: 20px; 
         transition: all 4s;}
     
@@ -20,17 +17,19 @@
         margin:-50px 0px;
         position:fixed;
         width:100%;
-        background-color: $black_75;}
+        background:linear-gradient(10deg, rgb(0, 0, 0),rgba(0, 0, 0, 0.863), rgba(124, 2, 98, 0.548),rgba(71, 0, 119, 0.692),rgba(3, 179, 179, 0.541)); 
+        }
+        
     
-    h2 {font-size: 35px;
-        padding: 20px 0px 20px 10px;
+    h2 {
+        
         background-color: $black_50;
         text-align: center;
         border-radius: 20px}
 
-    p   {font-size:25px;
+    p   {
         margin:10px 20px 0px 20px;
-        padding:50px 10px 40px 10px;
+        
         border-radius:20px;
         transition:1s;}
 
@@ -197,9 +196,7 @@
                            
     .main-Curso {
         
-        section {height: 300px;
-                width: 1400px;
-                margin: 20px;} 
+        
         
        
         .p2:hover   {color:$colorCursosHover;
@@ -243,11 +240,7 @@
     .main-Info    {
           
       
-    section   {
-            height: 400px;
-            width: 1300px;
-            margin: 20px; 
-            &:hover {animation: infoSec 4s;}} 
+     
        
     .p4:hover  {color: $colorCursos;
                     transition:1s;
@@ -270,34 +263,24 @@
     
     
     
-    margin-bottom: 400px; 
-    background-image: url(../src/multimedia/fondos/fondo-principal.svg);
-    }
+
     
     
-
-
-
-
-
-  
- 
-  
   @keyframes CursoA {
   
-        10% {color: $colorCursosHover;font-size: 21px;}
-        30% {color: ligthen($colorCursosHover,10%);font-size: 20.5px;}
-        60% {color: ligthen($colorCursos,10%); font-size: 20.8px;}
-        100%{color: $colorCursos;font-size: 20.2px;}
+        10% {color: $colorCursosHover;}
+        30% {color: ligthen($colorCursosHover,10%);}
+        60% {color: ligthen($colorCursos,10%); }
+        100%{color: $colorCursos;}
   
   }
   
   @keyframes infoA {
   
-        10%   {color: $colorCursos;font-size: 21px;}
-        30%   {color: ligthen($colorCursos,10%);font-size: 20.5px;}
-        60%   {color: ligthen($colorCursosHover,10%); font-size: 20.8px;}
-        100%  {color: $colorCursosHover;font-size: 20.2px;}     
+        10%   {color: $colorCursos;}
+        30%   {color: ligthen($colorCursos,10%);}
+        60%   {color: ligthen($colorCursosHover,10%); }
+        100%  {color: $colorCursosHover;}     
   
   }
   
@@ -313,26 +296,50 @@
   
   }
   
-
-  @media screen and (min-width:0px) and (max-width:575px) {
+    }
     
-    .paginaInfo-Curso{display: none;}
-
-}  
-
-@media screen and (min-width:576px) and (max-width:768px) {
     
+
+
+
+
+
+    @media screen and (min-width:0px) and (max-width:359px) {
+      
+        .paginaInfo-Curso{display: none;}
+    
+    }   
+ 
+  
+
+  @media screen and (min-width:360px) and (max-width:575px) {
+      
     .columnaicon {display: none;}
-    .bootcont {padding-top: -100px;}
+    .bootcont {padding-top: 70px;}
+    .txt1{font-size: 15px;}
     .paginaInfo-Curso{ 
+       
+        p{font-size: 12px;
+            padding:30px 10px 40px 10px;}
+        h2{font-size: 25px;
+            padding: 10px 0px 10px 10px;}
 
         .contInfo{
 
             .col-6{margin: 30px 0px 10px 0px;}
         }
-        .animImg{transform: scale(1) translateX(0px) translateY(100px); transition: 2s;}
+        .animImg{transform: scale(1) translateX(20px) translateY(100px); transition: 2s;}
+        .animdan    {@include animPerson(0px,150px)}
+         
+            
+        .animkira   {@include animPerson(0px,50px)} 
+                        
+        .animjean   {@include animPerson(0px,50px)}
+                  
+        .animjon    {@include animPerson(0px,150px)}
+        
 
-        section{margin-top: 200px;}
+       
 
        
 
@@ -340,13 +347,20 @@
 
         .main-Curso{
 
+
             section     {height: 600px;
-                        width: 1400px;
-                        margin-bottom: 200px;}
+                        width: 400px;
+                        margin: 100px 20px ;}
+
+             article    {margin: 180px 0px 10px 0px;
+                        padding: 20px 10px 30px 10px;
+                        border-radius: 20px; 
+                        transition: all 4s;}             
 
                     
 
-            height: 3250px;    
+            height: 3250px; 
+            
 
         }
         .main-Info{
@@ -361,7 +375,218 @@
 
             section     {height: 600px;
                         width: 1300px;
-                        margin: 20px; }
+                        margin: 20px; 
+                        &:hover {animation: infoSec 4s;}}
+
+            height: 4700px;    
+
+        }
+
+
+        .navCursos h1   {font-size: 20px;padding: 5px;}
+        .navInfo h1   {font-size: 20px;padding: 5px;}
+        .menuInfo   {justify-content: start;
+                    padding: 0;
+                    a   {padding:0px 10px 10px 10px;font-size: 8px;}
+                    li  {margin: 0px 0px;}}
+
+
+
+        .menuCursos {justify-content: start;
+                    padding: 0;
+                    
+                    a {padding:0;font-size: 8px;}
+                    li  {margin: 5px 0px;}
+                    justify-content: start;
+           
+        }  
+        
+        
+        margin-bottom: 400px; 
+    background-image: url(../src/multimedia/fondos/fondo-principal.svg);
+            
+       }
+    
+
+}  
+
+@media screen and (min-width:576px) and (max-width:768px) {
+    
+    .columnaicon {display: none;}
+    .bootcont {padding-top: 70px;}
+    .txt1{font-size: 15px;}
+    .paginaInfo-Curso{ 
+       
+        p{font-size: 12px;
+            padding:30px 10px 40px 10px;}
+        h2{font-size: 25px;
+            padding: 10px 0px 10px 10px;}
+
+        .contInfo{
+
+            .col-6{margin: 30px 0px 10px 0px;}
+        }
+        .animImg{transform: scale(1) translateX(20px) translateY(100px); transition: 2s;}
+        .animdan    {@include animPerson(70px,70px)}
+         
+            
+        .animkira   {@include animPerson(70px,30px)} 
+                        
+        .animjean   {@include animPerson(70px,30px)}
+                  
+        .animjon    {@include animPerson(70px,70px)}
+        
+
+       
+
+       
+
+        .col-10{margin: 50px 0px 50px 50px;}
+
+        .main-Curso{
+
+            section     {height: 400px;
+                        width: 660px;
+                        margin: 100px 8px 0px 10px;}
+
+           article {margin: 0px 0px 10px 0px;
+        padding: 50px 10px 30px 10px;
+        border-radius: 20px; 
+        transition: all 4s;}        
+
+            height: 3250px; 
+            
+
+        }
+        .main-Info{
+
+            #id-Contact {
+
+                div{padding: 40px 0px;text-align: center;margin: 0;}
+                b{padding: 0;margin: 0;font-size: 15px;}
+                a{padding: 0px -30px 0px 0px;margin: 0px -30px 0px 0px;}     
+            
+            }
+
+            section     {height: 400px;
+                        width: 700px;
+                        margin: 20px 0px 0px 30px; 
+                        &:hover {animation: infoSec 4s;}}
+
+
+            article {margin: 160px 0px 10px 0px;
+                    padding: 50px 10px 30px 10px;
+                    border-radius: 20px; 
+                    transition: all 4s;}
+
+            height: 4700px;    
+
+        }
+
+
+        .navCursos h1   {font-size: 20px;padding: 5px;}
+        .navInfo h1   {font-size: 20px;padding: 5px;}
+        .menuInfo   {justify-content: start;
+                    padding: 0;
+                    a   {padding:0px 10px 10px 10px;font-size: 8px;}
+                    li  {margin: 0px 0px;}}
+
+
+
+        .menuCursos {justify-content: start;
+                    padding: 0;
+                    
+                    a {padding:0;font-size: 8px;}
+                    li  {margin: 5px 0px;}
+                    justify-content: start;
+           
+        } 
+
+    margin-bottom: 400px; 
+    background-image: url(../src/multimedia/fondos/fondo-principal.svg);
+             
+            
+       }
+    
+}  
+
+@media screen and (min-width:769px) and (max-width:1199px) {
+    
+    .paginaInfo-Curso{display: none;}
+
+}  
+
+@media screen and (min-width:1200px) and (max-width:1400px) {
+    
+    
+    .bootcont {padding-top: 70px;}
+    .txt1{font-size: 25px;}
+    .paginaInfo-Curso{ 
+       
+        p{font-size: 20px;
+            padding:30px 10px 40px 10px;}
+        h2{font-size: 35px;
+            padding: 10px 0px 10px 10px;}
+
+        .contInfo{
+
+            .col-6{margin: 30px 0px 10px 0px;}
+        }
+        .animImg{transform: scale(1) translateX(20px) translateY(100px); transition: 2s;}
+        .animdan    {@include animPerson(80px,70px)}
+         
+            
+        .animkira   {@include animPerson(2px,50px)} 
+                        
+        .animjean   {@include animPerson(2px,50px)}
+                  
+        .animjon    {@include animPerson(80px,70px)}
+        
+
+       
+
+       
+
+        .col-10{margin: 50px 0px 50px 50px;}
+
+        .main-Curso{
+
+            section     {height: 600px;
+                        width: 1400px;
+                        margin:50px 0px}
+
+             article {margin: 160px 0px 10px 0px;
+                            padding: 50px 10px 30px 10px;
+                            border-radius: 20px; 
+                            transition: all 4s;}            
+                  
+
+                    
+
+            height: 3250px; 
+            
+
+        }
+        .main-Info{
+
+            #id-Contact {
+
+                div{padding: 40px 0px;text-align: center;margin: 0;}
+                b{padding: 0;margin: 0;font-size: 15px;}
+                a{padding: 0px -30px 0px 0px;margin: 0px -30px 0px 0px;}     
+            
+            }
+
+            section     {height: 600px;
+                        width: 1300px;
+                        margin: 50px 0px; 
+                        &:hover {animation: infoSec 4s;}}
+            
+                        
+            article {margin: 160px 0px 10px 0px;
+                    padding: 50px 10px 30px 10px;
+                    border-radius: 20px; 
+                    transition: all 4s;} 
 
             height: 4700px;    
 
@@ -372,32 +597,26 @@
         .navInfo h1   {font-size: 30px;padding: 5px;}
         .menuInfo   {justify-content: start;
                     padding: 0;
-                    a   {padding:0px 20px 10px 10px;font-size: 18px;}
-                    li  {margin: 10px 0px;}}
+                    a   {padding:0px 10px 10px 10px;font-size: 15px;}
+                    li  {margin: 10px 0px;}
+                }
 
 
 
         .menuCursos {justify-content: start;
                     padding: 0;
                     
-                    a {padding:10px 50px 10px 30px;font-size: 18px;}
+                    a {padding:0;font-size: 18px;}
                     li  {margin: 5px 0px;}
                     justify-content: start;
+                    
            
-        }          
-            
-       }
+        }    
         
-}  
-
-@media screen and (min-width:769px) and (max-width:1999px) {
+        margin-bottom: 400px; 
+    background-image: url(../src/multimedia/fondos/fondo-principal.svg);
+            
+     }
     
-    .paginaInfo-Curso{display: none;}
-
-}  
-
-@media screen and (min-width:1200px) and (max-width:1400px) {
-    
-    .paginaInfo-Curso{display: block;}
 
 }  

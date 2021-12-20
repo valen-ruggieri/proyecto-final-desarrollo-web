@@ -95,9 +95,7 @@ section iframe {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, 350px);
     gap: 40px;
-    grid-template-areas: "header header header header"
- "section section section aside"
- "footer footer footer aside";
+    grid-template-areas: "header header header header" "section section section aside" "footer footer footer aside";
     padding: 20px;
     font-size: 23px; }
     .grid-container .grid-item:first-child {
@@ -154,9 +152,93 @@ section iframe {
         .grid-container .grid-item:nth-child(4) a:hover {
           color: #bb73ff; } }
 
-@media screen and (min-width: 0px) and (max-width: 575px) {
+@media screen and (min-width: 0px) and (max-width: 360px) {
   .grid-container {
     display: none; } }
+
+@media screen and (min-width: 360px) and (max-width: 575px) {
+  .bodyJavasc {
+    background-size: 600%;
+    background-position: left bottom; }
+  .bodyReactjs {
+    background-size: 50%; }
+  .bodyCss {
+    background-size: 400%; }
+  .bodyHtml {
+    background-size: 400%; }
+  .general {
+    margin-right: 8%; }
+    .general .grid-container {
+      display: grid;
+      background-size: cover;
+      grid-template-columns: repeat(4, 200px);
+      grid-template-rows: repeat(2, 150px);
+      gap: 50px;
+      grid-template-areas: "header header" "header header " "section section" "footer aside";
+      padding: 20px;
+      font-size: 13px; }
+      .general .grid-container .grid-item:first-child {
+        grid-area: header;
+        border-radius: 20px;
+        width: 300px;
+        height: 175px; }
+        .general .grid-container .grid-item:first-child h1 {
+          padding: 10px 0px;
+          margin-top: 10px;
+          box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.479); }
+        .general .grid-container .grid-item:first-child p {
+          padding: 10px;
+          background-color: rgba(0, 0, 0, 0.041);
+          border-radius: 20px;
+          font-size: 11px;
+          box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.479); }
+      .general .grid-container .grid-item:nth-child(2) {
+        grid-area: section;
+        border-radius: 20px;
+        width: 600px; }
+      .general .grid-container section iframe, .general .grid-container .imagen-pag {
+        width: 300px;
+        height: 200px;
+        margin: 0px 30px 0px 10px;
+        margin-top: 60px;
+        box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.479); }
+      .general .grid-container .grid-item:nth-child(3) {
+        background: linear-gradient(45deg, rgba(32, 32, 32, 0.219), rgba(0, 0, 0, 0.514), rgba(32, 32, 32, 0.698));
+        box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.479);
+        grid-area: aside;
+        width: 50px;
+        border-radius: 20px;
+        margin-left: 10px;
+        margin-top: 20px;
+        height: 150px; }
+        .general .grid-container .grid-item:nth-child(3) .volverpags, .general .grid-container .grid-item:nth-child(3) .login-pags {
+          width: 30px;
+          margin: 20px 0px 20px 10px;
+          background: linear-gradient(45deg, rgba(32, 32, 32, 0.596), rgba(255, 255, 255, 0.493));
+          border-radius: 50%; }
+      .general .grid-container .grid-item:nth-child(4) {
+        background-color: rgba(0, 0, 0, 0.748);
+        border-radius: 20px;
+        grid-area: footer;
+        height: 200px;
+        width: 230px;
+        margin: 0px 0px 0px 10px;
+        box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.479); }
+        .general .grid-container .grid-item:nth-child(4) a {
+          text-decoration: none;
+          color: #eff7ff;
+          background: rgba(0, 0, 0, 0.748);
+          border-radius: 20px;
+          padding: 10px 50px 10px 15px; }
+          .general .grid-container .grid-item:nth-child(4) a:hover {
+            color: #bb73ff; }
+        .general .grid-container .grid-item:nth-child(4) h4 {
+          font-size: 20px;
+          text-align: center;
+          margin-top: 10px; }
+        .general .grid-container .grid-item:nth-child(4) li {
+          margin: 40px 20px 0px 20px;
+          list-style: none; } }
 
 @media screen and (min-width: 576px) and (max-width: 768px) {
   .bodyJavasc {
@@ -176,10 +258,7 @@ section iframe {
       grid-template-columns: repeat(4, 200px);
       grid-template-rows: repeat(2, 150px);
       gap: 50px;
-      grid-template-areas: "header header"
- "header header "
- "section section"
- "footer aside";
+      grid-template-areas: "header header" "header header " "section section" "footer aside";
       padding: 20px;
       font-size: 13px; }
       .general .grid-container .grid-item:first-child {
@@ -253,35 +332,30 @@ section iframe {
   background-image: url(../src/multimedia/fondos/fondo-principal.svg); }
   #paginaprincipal .barraNav {
     display: block;
-    background-color: rgba(0, 0, 0, 0.748);
+    background: linear-gradient(10deg, black, rgba(0, 0, 0, 0.863), rgba(124, 2, 98, 0.548), rgba(71, 0, 119, 0.692), rgba(3, 179, 179, 0.541));
     padding: 0px 0px 10.2px 0px;
     position: fixed;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.479);
     width: 100%;
     z-index: 2; }
   #paginaprincipal .titulopag {
     color: azure;
-    font-size: 50px;
     display: block;
-    padding: 10px 0px;
-    margin: 0px 0px 10px 0px;
-    background-color: rgba(0, 0, 0, 0.501);
     border-radius: 0px; }
   #paginaprincipal .menuPrincipal {
-    margin: 0px 0px 0px 300px;
-    margin: 0px 0px 0px 300px;
-    margin: 0px 0px 0px 300px;
-    margin: 0px 0px 0px 300px;
-    margin: 0px 0px 0px 300px;
-    margin: 0px 0px 0px 300px; }
+    z-index: 2;
+    z-index: 2;
+    z-index: 2;
+    z-index: 2;
+    z-index: 2;
+    z-index: 2; }
     #paginaprincipal .menuPrincipal a {
       padding: 7px;
       border-radius: 10px;
       display: inline;
-      margin: 30px 10px 5px 30px;
       transition: 1s;
       outline: solid 2px #00000000; }
       #paginaprincipal .menuPrincipal a:hover {
-        font-size: 20.3px;
         background-color: rgba(0, 0, 0, 0.501);
         transition: 0,65s; }
     #paginaprincipal .menuPrincipal li {
@@ -376,7 +450,6 @@ section iframe {
           transition: 0,45s;
           background-color: rgba(0, 0, 0, 0.748); }
   #paginaprincipal #bienvenidosSecc {
-    padding: 140px 0px 0px 0px;
     margin: 0px 0px 0px 0px; }
     #paginaprincipal #bienvenidosSecc .bienvenidosArt {
       padding: 0;
@@ -393,21 +466,14 @@ section iframe {
           justify-content: center;
           list-style: none;
           padding: 10px 0px 0px 0px; }
-          #paginaprincipal #bienvenidosSecc .bienvenidosArt .bienvenidosDiv .iconsBienvenidos img {
-            width: 60px;
-            margin-left: 60px; }
-        #paginaprincipal #bienvenidosSecc .bienvenidosArt .bienvenidosDiv h3 {
-          font-size: 100px;
-          letter-spacing: 4px;
-          padding: 20px 0px;
+        #paginaprincipal #bienvenidosSecc .bienvenidosArt .bienvenidosDiv h2 {
           color: transparent;
           text-align: center;
           -webkit-background-clip: text;
           background-clip: text;
           background-image: linear-gradient(45deg, #cc00a0, #8f02ec, cyan);
           text-shadow: 5px 2px 7px rgba(0, 0, 0, 0.356); }
-        #paginaprincipal #bienvenidosSecc .bienvenidosArt .bienvenidosDiv h5 {
-          font-size: 30px;
+        #paginaprincipal #bienvenidosSecc .bienvenidosArt .bienvenidosDiv h3 {
           letter-spacing: 4px;
           padding: 20px 0px;
           margin: 10px 0px 0px 0px;
@@ -428,7 +494,7 @@ section iframe {
       opacity: 0;
       transition: 2s;
       width: 240px;
-      padding: 20px 100px 0px 110px; }
+      padding: 20px 0px 0px 110px; }
     #paginaprincipal .caja .back-html {
       margin: 10px 10px 0px;
       padding: 33px 0px;
@@ -458,22 +524,26 @@ section iframe {
       background-image: url(../src/multimedia/fondos/fondo-react.svg);
       color: #00aeff;
       background-size: 10%; }
-    #paginaprincipal .caja .html-h2 {
+    #paginaprincipal .caja .html-h4 {
       background-color: #e46e00;
       color: white;
-      text-shadow: 1px 1px #000000; }
-    #paginaprincipal .caja .css-h2 {
+      text-shadow: 1px 1px #000000;
+      font-size: 30px; }
+    #paginaprincipal .caja .css-h4 {
       background-color: #0067dd;
       color: #6fcaff;
-      text-shadow: 1px 1px #000000; }
-    #paginaprincipal .caja .javas-h2 {
+      text-shadow: 1px 1px #000000;
+      font-size: 30px; }
+    #paginaprincipal .caja .javas-h4 {
       background-color: #fdd806;
       color: rgba(15, 7, 14, 0.562);
-      text-shadow: 1px 1px #000000; }
-    #paginaprincipal .caja .reactjs-h2 {
+      text-shadow: 1px 1px #000000;
+      font-size: 30px; }
+    #paginaprincipal .caja .reactjs-h4 {
       background-color: #00d4f0;
       color: #140261;
-      text-shadow: 1px 1px #000000; }
+      text-shadow: 1px 1px #000000;
+      font-size: 30px; }
     #paginaprincipal .caja .conocemas {
       color: #c300ff;
       border-radius: 20px;
@@ -495,7 +565,7 @@ section iframe {
     width: 100%;
     position: absolute; }
     #paginaprincipal .foterPrincipal ul {
-      opacity: 1;
+      opacity: 0;
       transition: 2s;
       transition-property: all; }
     #paginaprincipal .foterPrincipal li {
@@ -505,7 +575,6 @@ section iframe {
     #paginaprincipal .foterPrincipal a {
       color: white; }
       #paginaprincipal .foterPrincipal a:hover {
-        font-size: 20.1px;
         transition: 0.4s; }
     #paginaprincipal .foterPrincipal .listaH, #paginaprincipal .foterPrincipal .listaUno a:hover, #paginaprincipal .foterPrincipal .listaDos a:hover, #paginaprincipal .foterPrincipal .listaTres a:hover {
       text-decoration: line-through;
@@ -522,99 +591,206 @@ section iframe {
       transition: 0.8s;
       transition-property: all; }
 
-@media screen and (min-width: 0px) and (max-width: 575px) {
+@media screen and (min-width: 0px) and (max-width: 349px) {
   #paginaprincipal {
     display: none; } }
 
+@media screen and (min-width: 350px) and (max-width: 450px) {
+  body {
+    margin-right: 0px; }
+  .titulopag {
+    font-size: 28px;
+    margin: 0px 20px 0px 0px;
+    padding: 10px; }
+  .bienvenidosDiv img {
+    width: 30px;
+    margin-left: 20px; }
+  .bienvenidosDiv h2 {
+    font-size: 40px;
+    letter-spacing: 2px; }
+  .bienvenidosDiv h3 {
+    font-size: 20px; }
+  #bienvenidosSecc {
+    padding: 150px 0px 0px 0px; }
+  .menuPrincipal {
+    padding: 0px;
+    position: relative;
+    left: 15%;
+    width: 100%; }
+    .menuPrincipal a {
+      font-size: 12px;
+      margin: 0px 30px 0px 0px; }
+    .menuPrincipal li {
+      padding: 0;
+      margin: 0px 0px 0px -30px; }
+  .foterPrincipal ul {
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+    left: 6%; }
+  .foterPrincipal a {
+    font-size: 12px; }
+  .foterPrincipal:hover ul {
+    visibility: visible;
+    opacity: 1;
+    transition: 0.8s;
+    transition-property: all; } }
+
+@media screen and (min-width: 450px) and (max-width: 575px) {
+  .titulopag {
+    font-size: 28px;
+    margin: 0px 30px 0px 0px;
+    padding: 10px; }
+  .bienvenidosDiv img {
+    width: 30px;
+    margin-left: 20px; }
+  .bienvenidosDiv h2 {
+    font-size: 40px;
+    letter-spacing: 2px; }
+  .bienvenidosDiv h3 {
+    font-size: 20px; }
+  #bienvenidosSecc {
+    padding: 150px 0px 0px 0px; }
+  .menuPrincipal {
+    padding: 0px;
+    position: relative;
+    left: 20%;
+    width: 100%; }
+    .menuPrincipal a {
+      font-size: 12px;
+      margin: 0px 40px 0px 0px; }
+    .menuPrincipal li {
+      padding: 0;
+      margin: 0px 0px 0px -30px; }
+  .foterPrincipal ul {
+    position: relative;
+    display: inline-block;
+    padding: 20px;
+    left: 17%; }
+  .foterPrincipal a {
+    font-size: 12px; }
+  .foterPrincipal:hover ul {
+    visibility: visible;
+    opacity: 1;
+    transition: 0.8s;
+    transition-property: all; } }
+
 @media screen and (min-width: 576px) and (max-width: 606px) {
+  .titulopag {
+    font-size: 38px;
+    margin: 0px 20px 0px 10px;
+    padding: 10px; }
+  .bienvenidosDiv img {
+    width: 40px;
+    margin-left: 30px; }
+  .bienvenidosDiv h2 {
+    font-size: 43px;
+    letter-spacing: 2px; }
+  .bienvenidosDiv h3 {
+    font-size: 20px; }
+  #bienvenidosSecc {
+    padding: 150px 0px 0px 0px; }
   .menuPrincipal {
-    padding: 20px;
+    padding: 0px;
     position: relative;
-    right: 50%;
+    left: 20%;
     width: 100%; }
+    .menuPrincipal a {
+      font-size: 16px;
+      margin: 0px 30px 0px 0px; }
     .menuPrincipal li {
-      padding: 6px 0px 10px 0px;
+      padding: 0;
       margin: 0px 0px 0px -30px; }
   .foterPrincipal ul {
     position: relative;
     display: inline-block;
-    padding: 10px;
-    left: 8%; } }
+    padding: 18px;
+    left: 17%; }
+  .foterPrincipal a {
+    font-size: 15px; }
+  .foterPrincipal:hover ul {
+    visibility: visible;
+    opacity: 1;
+    transition: 0.8s;
+    transition-property: all; } }
 
-@media screen and (min-width: 607px) and (max-width: 637px) {
+@media screen and (min-width: 607px) and (max-width: 687px) {
+  .titulopag {
+    font-size: 38px;
+    margin: 0px 10px 0px 0px;
+    padding: 10px; }
+  .bienvenidosDiv img {
+    width: 30px;
+    margin-left: 20px; }
+  .bienvenidosDiv h2 {
+    font-size: 40px;
+    letter-spacing: 2px; }
+  .bienvenidosDiv h3 {
+    font-size: 20px; }
+  #bienvenidosSecc {
+    padding: 150px 0px 0px 0px; }
   .menuPrincipal {
-    padding: 20px;
+    padding: 0px;
     position: relative;
-    right: 45%;
+    left: 24%;
     width: 100%; }
+    .menuPrincipal a {
+      font-size: 16px;
+      margin: 0px 30px 0px 0px; }
     .menuPrincipal li {
-      padding: 6px 0px 10px 0px;
+      padding: 0;
       margin: 0px 0px 0px -30px; }
   .foterPrincipal ul {
     position: relative;
     display: inline-block;
-    padding: 10px;
-    left: 10%; } }
+    padding: 20px;
+    left: 19%; }
+  .foterPrincipal a {
+    font-size: 15px; }
+  .foterPrincipal:hover ul {
+    visibility: visible;
+    opacity: 1;
+    transition: 0.8s;
+    transition-property: all; } }
 
-@media screen and (min-width: 638px) and (max-width: 668px) {
+@media screen and (min-width: 688px) and (max-width: 769px) {
+  .titulopag {
+    font-size: 38px;
+    margin: 0px 45px 0px 0px;
+    padding: 10px; }
+  .bienvenidosDiv img {
+    width: 50px;
+    margin-left: 20px; }
+  .bienvenidosDiv h2 {
+    font-size: 40px;
+    letter-spacing: 2px; }
+  .bienvenidosDiv h3 {
+    font-size: 20px; }
+  #bienvenidosSecc {
+    padding: 150px 0px 0px 0px; }
   .menuPrincipal {
-    padding: 20px;
+    padding: 0px;
     position: relative;
-    right: 40%;
+    left: 25%;
     width: 100%; }
+    .menuPrincipal a {
+      font-size: 16px;
+      margin: 0px 30px 0px 0px; }
     .menuPrincipal li {
-      padding: 6px 0px 10px 0px;
+      padding: 0;
       margin: 0px 0px 0px -30px; }
   .foterPrincipal ul {
     position: relative;
     display: inline-block;
-    padding: 10px;
-    left: 12%; } }
-
-@media screen and (min-width: 669px) and (max-width: 700px) {
-  .menuPrincipal {
     padding: 20px;
-    position: relative;
-    right: 35%;
-    width: 100%; }
-    .menuPrincipal li {
-      padding: 6px 0px 10px 0px;
-      margin: 0px 0px 0px -30px; }
-  .foterPrincipal ul {
-    position: relative;
-    display: inline-block;
-    padding: 10px;
-    left: 14%; } }
-
-@media screen and (min-width: 701px) and (max-width: 731px) {
-  .menuPrincipal {
-    padding: 20px;
-    position: relative;
-    right: 30%;
-    width: 100%; }
-    .menuPrincipal li {
-      padding: 6px 0px 10px 0px;
-      margin: 0px 0px 0px -30px; }
-  .foterPrincipal ul {
-    position: relative;
-    display: inline-block;
-    padding: 10px;
-    left: 16%; } }
-
-@media screen and (min-width: 732px) and (max-width: 768px) {
-  .menuPrincipal {
-    padding: 20px;
-    position: relative;
-    right: 25%;
-    width: 100%; }
-    .menuPrincipal li {
-      padding: 6px 0px 10px 0px;
-      margin: 0px 0px 0px -30px; }
-  .foterPrincipal ul {
-    position: relative;
-    display: inline-block;
-    padding: 10px;
-    left: 18%; } }
+    left: 19%; }
+  .foterPrincipal a {
+    font-size: 15px; }
+  .foterPrincipal:hover ul {
+    visibility: visible;
+    opacity: 1;
+    transition: 0.8s;
+    transition-property: all; } }
 
 @media screen and (min-width: 769px) and (max-width: 1999px) {
   #paginaprincipal {
@@ -623,12 +799,42 @@ section iframe {
 @media screen and (min-width: 1200px) and (max-width: 1400px) {
   #paginaprincipal {
     display: block; }
+    #paginaprincipal .titulopag {
+      font-size: 60px;
+      margin: 0px 45px 0px 0px;
+      padding: 10px; }
+    #paginaprincipal .bienvenidosDiv img {
+      width: 50px;
+      margin-left: 20px; }
+    #paginaprincipal .bienvenidosDiv h2 {
+      font-size: 60px;
+      letter-spacing: 2px; }
+    #paginaprincipal .bienvenidosDiv h3 {
+      font-size: 30px; }
+    #paginaprincipal #bienvenidosSecc {
+      padding: 150px 0px 0px 0px; }
+    #paginaprincipal .menuPrincipal {
+      padding: 0px;
+      position: relative;
+      left: 30%;
+      width: 100%; }
+      #paginaprincipal .menuPrincipal a {
+        font-size: 20px;
+        margin: 0px 50px 0px 0px; }
+      #paginaprincipal .menuPrincipal li {
+        padding: 0;
+        margin: 0px 0px 0px -30px; }
     #paginaprincipal .foterPrincipal ul {
+      position: relative;
       display: inline-block;
-      padding: 0px 20px 0px 210px;
-      margin: 30px 0px 0px 0px;
-      opacity: 0;
-      transition: 2s;
+      padding: 0px 230px 0px 0px;
+      left: 20%; }
+    #paginaprincipal .foterPrincipal a {
+      font-size: 20px; }
+    #paginaprincipal .foterPrincipal:hover ul {
+      visibility: visible;
+      opacity: 1;
+      transition: 0.8s;
       transition-property: all; } }
 
 .bodybox {
@@ -663,7 +869,6 @@ section iframe {
       border: 0;
       background: linear-gradient(45deg, rgba(205, 105, 251, 0.609), rgba(253, 10, 51, 0.746));
       -webkit-background-clip: text;
-      background-clip: text;
       display: block;
       margin: 20px auto;
       font-size: 25px;
@@ -786,71 +991,66 @@ section iframe {
   .bodybox {
     display: block; } }
 
-.paginaInfo-Curso {
-  margin-bottom: 400px;
-  background-image: url(../src/multimedia/fondos/fondo-principal.svg); }
-  .paginaInfo-Curso header {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    background-color: rgba(0, 0, 0, 0.748);
-    padding: 40px; }
-  .paginaInfo-Curso section {
-    align-self: center;
-    border-radius: 10px;
-    margin-top: 110px; }
-  .paginaInfo-Curso article {
-    margin: 160px 0px 10px 0px;
-    padding: 50px 10px 30px 10px;
-    border-radius: 20px;
-    transition: all 4s; }
-  .paginaInfo-Curso nav {
-    text-align: center;
-    padding: 10px 0px;
-    margin: -50px 0px;
-    position: fixed;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.748); }
-  .paginaInfo-Curso h2 {
-    font-size: 35px;
-    padding: 20px 0px 20px 10px;
-    background-color: rgba(0, 0, 0, 0.501);
-    text-align: center;
-    border-radius: 20px; }
-  .paginaInfo-Curso p {
-    font-size: 25px;
-    margin: 10px 20px 0px 20px;
-    padding: 50px 10px 40px 10px;
-    border-radius: 20px;
-    transition: 1s; }
-  .paginaInfo-Curso a {
-    text-decoration: none;
-    color: lightgray; }
-  .paginaInfo-Curso .b1, .paginaInfo-Curso .b2, .paginaInfo-Curso .b3, .paginaInfo-Curso .b4 {
-    font-weight: normal;
-    transition: 1.5s; }
-  .paginaInfo-Curso .bg-ligth {
-    background-color: rgba(0, 0, 0, 0.397);
-    border-radius: 20px; }
-  .paginaInfo-Curso .violetbt {
-    background-color: rgba(1, 2, 2, 0.658);
-    color: #9a43fd;
-    border-radius: 20px; }
-    .paginaInfo-Curso .violetbt p {
-      opacity: 0; }
-    .paginaInfo-Curso .violetbt a {
-      background-color: #9a43fd;
+.paginaInfo-Curso header {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.748);
+  padding: 40px; }
+
+.paginaInfo-Curso article {
+  border-radius: 20px;
+  transition: all 4s; }
+
+.paginaInfo-Curso nav {
+  text-align: center;
+  padding: 10px 0px;
+  margin: -50px 0px;
+  position: fixed;
+  width: 100%;
+  background: linear-gradient(10deg, black, rgba(0, 0, 0, 0.863), rgba(124, 2, 98, 0.548), rgba(71, 0, 119, 0.692), rgba(3, 179, 179, 0.541)); }
+
+.paginaInfo-Curso h2 {
+  background-color: rgba(0, 0, 0, 0.501);
+  text-align: center;
+  border-radius: 20px; }
+
+.paginaInfo-Curso p {
+  margin: 10px 20px 0px 20px;
+  border-radius: 20px;
+  transition: 1s; }
+
+.paginaInfo-Curso a {
+  text-decoration: none;
+  color: lightgray; }
+
+.paginaInfo-Curso .b1, .paginaInfo-Curso .b2, .paginaInfo-Curso .b3, .paginaInfo-Curso .b4 {
+  font-weight: normal;
+  transition: 1.5s; }
+
+.paginaInfo-Curso .bg-ligth {
+  background-color: rgba(0, 0, 0, 0.397);
+  border-radius: 20px; }
+
+.paginaInfo-Curso .violetbt {
+  background-color: rgba(1, 2, 2, 0.658);
+  color: #9a43fd;
+  border-radius: 20px; }
+  .paginaInfo-Curso .violetbt p {
+    opacity: 0; }
+  .paginaInfo-Curso .violetbt a {
+    background-color: #9a43fd;
+    color: white;
+    border: 1px solid #6602d8;
+    text-shadow: 1px 2px black; }
+    .paginaInfo-Curso .violetbt a:hover {
+      background-color: #46ffa3;
       color: white;
-      border: 1px solid #6602d8;
+      border: 1px solid #00df70;
       text-shadow: 1px 2px black; }
-      .paginaInfo-Curso .violetbt a:hover {
-        background-color: #46ffa3;
-        color: white;
-        border: 1px solid #00df70;
-        text-shadow: 1px 2px black; }
-    .paginaInfo-Curso .violetbt:hover p {
-      opacity: 1;
-      color: #46ffa3; }
+  .paginaInfo-Curso .violetbt:hover p {
+    opacity: 1;
+    color: #46ffa3; }
 
 @keyframes artGreen-Violet {
   10% {
@@ -867,87 +1067,97 @@ section iframe {
     box-shadow: 2px 2px 4px #9a43fd; }
   80% {
     background-color: #000000a8; } }
-    .paginaInfo-Curso .violetbt:hover .imgPosition {
-      margin: 20px 0px 0px 100px; }
-    .paginaInfo-Curso .violetbt:hover {
-      animation: artGreen-Violet 2s; }
-  .paginaInfo-Curso .animdan {
-    transform: translateX(80px) translateY(70px);
+  .paginaInfo-Curso .violetbt:hover .imgPosition {
+    margin: 20px 0px 0px 100px; }
+  .paginaInfo-Curso .violetbt:hover {
+    animation: artGreen-Violet 2s; }
+
+.paginaInfo-Curso .animdan {
+  transform: translateX(80px) translateY(70px);
+  transition: 2s; }
+  .paginaInfo-Curso .animdan:hover {
+    transform: translateX(0px) translateY(0px); }
+
+.paginaInfo-Curso .animkira {
+  transform: translateX(2px) translateY(70px);
+  transition: 2s; }
+  .paginaInfo-Curso .animkira:hover {
+    transform: translateX(0px) translateY(0px); }
+
+.paginaInfo-Curso .animjean {
+  transform: translateX(2px) translateY(80px);
+  transition: 2s; }
+  .paginaInfo-Curso .animjean:hover {
+    transform: translateX(0px) translateY(0px); }
+
+.paginaInfo-Curso .animjon {
+  transform: translateX(80px) translateY(90px);
+  transition: 2s; }
+  .paginaInfo-Curso .animjon:hover {
+    transform: translateX(0px) translateY(0px); }
+
+.paginaInfo-Curso .animImg {
+  transform: translateY(80px);
+  transition: 2s; }
+  .paginaInfo-Curso .animImg img {
+    transform: scale(2) translateX(-20px);
     transition: 2s; }
-    .paginaInfo-Curso .animdan:hover {
-      transform: translateX(0px) translateY(0px); }
-  .paginaInfo-Curso .animkira {
-    transform: translateX(2px) translateY(70px);
-    transition: 2s; }
-    .paginaInfo-Curso .animkira:hover {
-      transform: translateX(0px) translateY(0px); }
-  .paginaInfo-Curso .animjean {
-    transform: translateX(2px) translateY(80px);
-    transition: 2s; }
-    .paginaInfo-Curso .animjean:hover {
-      transform: translateX(0px) translateY(0px); }
-  .paginaInfo-Curso .animjon {
-    transform: translateX(80px) translateY(90px);
-    transition: 2s; }
-    .paginaInfo-Curso .animjon:hover {
-      transform: translateX(0px) translateY(0px); }
-  .paginaInfo-Curso .animImg {
-    transform: translateY(80px);
-    transition: 2s; }
-    .paginaInfo-Curso .animImg img {
-      transform: scale(2) translateX(-20px);
-      transition: 2s; }
-      .paginaInfo-Curso .animImg img:hover {
-        transform: scale(1);
-        transition: 2s; }
-    .paginaInfo-Curso .animImg h5 {
-      opacity: 0;
-      margin-top: 20px;
-      margin-left: 20px; }
-    .paginaInfo-Curso .animImg a {
-      opacity: 0;
-      transition: 0.5s;
-      margin-left: 20px; }
-    .paginaInfo-Curso .animImg p {
-      margin: 0;
-      padding: 20px;
-      transition: 3s; }
-    .paginaInfo-Curso .animImg:hover a {
-      opacity: 1;
-      transition: 3s; }
-    .paginaInfo-Curso .animImg:hover h5 {
-      opacity: 1; }
-    .paginaInfo-Curso .animImg:hover img {
+    .paginaInfo-Curso .animImg img:hover {
       transform: scale(1);
       transition: 2s; }
-    .paginaInfo-Curso .animImg:hover {
-      transform: translateX(0px) translateY(0px); }
-  .paginaInfo-Curso .iconanim img {
-    transition: 4s; }
-  .paginaInfo-Curso .iconanim h3 {
-    transition: 4s; }
-  .paginaInfo-Curso .iconanim:hover img {
-    transform: rotate(360deg);
+  .paginaInfo-Curso .animImg h5 {
+    opacity: 0;
+    margin-top: 20px;
+    margin-left: 20px; }
+  .paginaInfo-Curso .animImg a {
+    opacity: 0;
+    transition: 0.5s;
+    margin-left: 20px; }
+  .paginaInfo-Curso .animImg p {
+    margin: 0;
+    padding: 20px;
+    transition: 3s; }
+  .paginaInfo-Curso .animImg:hover a {
+    opacity: 1;
+    transition: 3s; }
+  .paginaInfo-Curso .animImg:hover h5 {
+    opacity: 1; }
+  .paginaInfo-Curso .animImg:hover img {
+    transform: scale(1);
     transition: 2s; }
-  .paginaInfo-Curso .iconanim:hover h3 {
-    transform: scale(1.2);
-    transition: 2s; }
-  .paginaInfo-Curso .greenbt {
-    background-color: rgba(0, 0, 0, 0.748);
-    color: #46ffa3;
-    border-radius: 20px; }
-    .paginaInfo-Curso .greenbt p {
-      opacity: 0; }
-    .paginaInfo-Curso .greenbt a {
-      background-color: #46ffa3;
+  .paginaInfo-Curso .animImg:hover {
+    transform: translateX(0px) translateY(0px); }
+
+.paginaInfo-Curso .iconanim img {
+  transition: 4s; }
+
+.paginaInfo-Curso .iconanim h3 {
+  transition: 4s; }
+
+.paginaInfo-Curso .iconanim:hover img {
+  transform: rotate(360deg);
+  transition: 2s; }
+
+.paginaInfo-Curso .iconanim:hover h3 {
+  transform: scale(1.2);
+  transition: 2s; }
+
+.paginaInfo-Curso .greenbt {
+  background-color: rgba(0, 0, 0, 0.748);
+  color: #46ffa3;
+  border-radius: 20px; }
+  .paginaInfo-Curso .greenbt p {
+    opacity: 0; }
+  .paginaInfo-Curso .greenbt a {
+    background-color: #46ffa3;
+    color: white;
+    border: 1px solid #00df70;
+    text-shadow: 1px 2px black; }
+    .paginaInfo-Curso .greenbt a:hover {
+      background-color: #9a43fd;
       color: white;
-      border: 1px solid #00df70;
-      text-shadow: 1px 2px black; }
-      .paginaInfo-Curso .greenbt a:hover {
-        background-color: #9a43fd;
-        color: white;
-        border: 1px solid #6602d8;
-        text-shadow: 1px 1px #000000; }
+      border: 1px solid #6602d8;
+      text-shadow: 1px 1px #000000; }
 
 @keyframes artViolet-Green {
   10% {
@@ -964,139 +1174,138 @@ section iframe {
     box-shadow: 2px 2px 4px #46ffa3; }
   80% {
     background-color: #000000a8; } }
-    .paginaInfo-Curso .greenbt:hover p {
-      opacity: 1;
-      color: #9a43fd; }
-    .paginaInfo-Curso .greenbt:hover .imgPosition {
-      margin: 20px 0px 0px 100px; }
-    .paginaInfo-Curso .greenbt:hover {
-      animation: artViolet-Green 2s; }
-  .paginaInfo-Curso .d-flex {
-    margin-bottom: -100px; }
-  .paginaInfo-Curso .imgPosition {
-    margin: 20px 0px 0px 140px; }
-  .paginaInfo-Curso .artGreen {
-    background-color: rgba(0, 0, 0, 0.501);
-    color: #46ffa3; }
-    .paginaInfo-Curso .artGreen:hover {
-      animation: artViolet-Green 4s; }
-  .paginaInfo-Curso .artViolet {
-    background-color: rgba(0, 0, 0, 0.501);
+  .paginaInfo-Curso .greenbt:hover p {
+    opacity: 1;
     color: #9a43fd; }
-    .paginaInfo-Curso .artViolet:hover {
-      animation: artGreen-Violet 4s; }
-  .paginaInfo-Curso .navCursos h1 {
-    font-size: 45px;
-    padding: 10px 0px;
-    color: #9a43fd;
-    margin: 0; }
-  .paginaInfo-Curso .navCursos:hover {
-    animation: CursoA 1.5s;
-    color: #9a43fd; }
-  .paginaInfo-Curso .navCursos:focus {
+  .paginaInfo-Curso .greenbt:hover .imgPosition {
+    margin: 20px 0px 0px 100px; }
+  .paginaInfo-Curso .greenbt:hover {
+    animation: artViolet-Green 2s; }
+
+.paginaInfo-Curso .d-flex {
+  margin-bottom: -100px; }
+
+.paginaInfo-Curso .imgPosition {
+  margin: 20px 0px 0px 140px; }
+
+.paginaInfo-Curso .artGreen {
+  background-color: rgba(0, 0, 0, 0.501);
+  color: #46ffa3; }
+  .paginaInfo-Curso .artGreen:hover {
+    animation: artViolet-Green 4s; }
+
+.paginaInfo-Curso .artViolet {
+  background-color: rgba(0, 0, 0, 0.501);
+  color: #9a43fd; }
+  .paginaInfo-Curso .artViolet:hover {
+    animation: artGreen-Violet 4s; }
+
+.paginaInfo-Curso .navCursos h1 {
+  font-size: 45px;
+  padding: 10px 0px;
+  color: #9a43fd;
+  margin: 0; }
+
+.paginaInfo-Curso .navCursos:hover {
+  animation: CursoA 1.5s;
+  color: #9a43fd; }
+
+.paginaInfo-Curso .navCursos:focus {
+  padding: 5px;
+  outline: solid 3px #9a43fd;
+  transition: 0.1s;
+  border-radius: 10px; }
+
+.paginaInfo-Curso .navCursos .menuCursos {
+  list-style: none;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around; }
+  .paginaInfo-Curso .navCursos .menuCursos a:focus {
     padding: 5px;
     outline: solid 3px #9a43fd;
     transition: 0.1s;
     border-radius: 10px; }
-  .paginaInfo-Curso .navCursos .menuCursos {
-    list-style: none;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around; }
-    .paginaInfo-Curso .navCursos .menuCursos a:focus {
-      padding: 5px;
-      outline: solid 3px #9a43fd;
-      transition: 0.1s;
-      border-radius: 10px; }
-    .paginaInfo-Curso .navCursos .menuCursos a:hover {
-      animation: CursoA 1.5s;
-      color: #9a43fd; }
-  .paginaInfo-Curso .main-Curso {
-    display: flex;
-    flex-flow: row wrap;
-    height: 3250px; }
-    .paginaInfo-Curso .main-Curso section {
-      height: 300px;
-      width: 1400px;
-      margin: 20px; }
-    .paginaInfo-Curso .main-Curso .p2:hover {
-      color: #46ffa3;
-      transition: 1s;
-      background-color: rgba(0, 0, 0, 0.501); }
-    .paginaInfo-Curso .main-Curso .p1:hover {
-      color: #9a43fd;
-      transition: 1s;
-      background-color: rgba(0, 0, 0, 0.501); }
-  .paginaInfo-Curso .navInfo h1 {
-    font-size: 45px;
-    padding: 20px 0px;
-    margin: 0;
-    color: #46ffa3; }
-  .paginaInfo-Curso .navInfo .menuInfo {
-    list-style: none;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around; }
-  .paginaInfo-Curso .navInfo .contInfo {
-    width: 1200px; }
-  .paginaInfo-Curso .navInfo .menuInfo a:focus {
-    padding: 5px;
-    outline: solid 3px #46ffa3;
-    transition: 0.1s;
-    border-radius: 10px; }
-  .paginaInfo-Curso .navInfo .menuInfo a:hover {
-    animation: infoA 1.5s;
-    color: #46ffa3; }
-  .paginaInfo-Curso .navInfo .colorTextViolet {
+  .paginaInfo-Curso .navCursos .menuCursos a:hover {
+    animation: CursoA 1.5s;
     color: #9a43fd; }
-  .paginaInfo-Curso .navInfo .colorTextGreen {
-    color: #46ffa3; }
-  .paginaInfo-Curso .main-Info {
-    display: flex;
-    flex-flow: row wrap;
-    height: 4300px; }
-    .paginaInfo-Curso .main-Info section {
-      height: 400px;
-      width: 1300px;
-      margin: 20px; }
-      .paginaInfo-Curso .main-Info section:hover {
-        animation: infoSec 4s; }
-    .paginaInfo-Curso .main-Info .p4:hover {
-      color: #9a43fd;
-      transition: 1s;
-      background-color: rgba(0, 0, 0, 0.568); }
-    .paginaInfo-Curso .main-Info .p3:hover {
-      color: #46ffa3;
-      transition: 1s;
-      background-color: rgba(0, 0, 0, 0.568); }
+
+.paginaInfo-Curso .main-Curso {
+  display: flex;
+  flex-flow: row wrap;
+  height: 3250px; }
+  .paginaInfo-Curso .main-Curso .p2:hover {
+    color: #46ffa3;
+    transition: 1s;
+    background-color: rgba(0, 0, 0, 0.501); }
+  .paginaInfo-Curso .main-Curso .p1:hover {
+    color: #9a43fd;
+    transition: 1s;
+    background-color: rgba(0, 0, 0, 0.501); }
+
+.paginaInfo-Curso .navInfo h1 {
+  font-size: 45px;
+  padding: 20px 0px;
+  margin: 0;
+  color: #46ffa3; }
+
+.paginaInfo-Curso .navInfo .menuInfo {
+  list-style: none;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around; }
+
+.paginaInfo-Curso .navInfo .contInfo {
+  width: 1200px; }
+
+.paginaInfo-Curso .navInfo .menuInfo a:focus {
+  padding: 5px;
+  outline: solid 3px #46ffa3;
+  transition: 0.1s;
+  border-radius: 10px; }
+
+.paginaInfo-Curso .navInfo .menuInfo a:hover {
+  animation: infoA 1.5s;
+  color: #46ffa3; }
+
+.paginaInfo-Curso .navInfo .colorTextViolet {
+  color: #9a43fd; }
+
+.paginaInfo-Curso .navInfo .colorTextGreen {
+  color: #46ffa3; }
+
+.paginaInfo-Curso .main-Info {
+  display: flex;
+  flex-flow: row wrap;
+  height: 4300px; }
+  .paginaInfo-Curso .main-Info .p4:hover {
+    color: #9a43fd;
+    transition: 1s;
+    background-color: rgba(0, 0, 0, 0.568); }
+  .paginaInfo-Curso .main-Info .p3:hover {
+    color: #46ffa3;
+    transition: 1s;
+    background-color: rgba(0, 0, 0, 0.568); }
 
 @keyframes CursoA {
   10% {
-    color: #46ffa3;
-    font-size: 21px; }
+    color: #46ffa3; }
   30% {
-    color: ligthen(#46ffa3, 10%);
-    font-size: 20.5px; }
+    color: ligthen(#46ffa3, 10%); }
   60% {
-    color: ligthen(#9a43fd, 10%);
-    font-size: 20.8px; }
+    color: ligthen(#9a43fd, 10%); }
   100% {
-    color: #9a43fd;
-    font-size: 20.2px; } }
+    color: #9a43fd; } }
 
 @keyframes infoA {
   10% {
-    color: #9a43fd;
-    font-size: 21px; }
+    color: #9a43fd; }
   30% {
-    color: ligthen(#9a43fd, 10%);
-    font-size: 20.5px; }
+    color: ligthen(#9a43fd, 10%); }
   60% {
-    color: ligthen(#46ffa3, 10%);
-    font-size: 20.8px; }
+    color: ligthen(#46ffa3, 10%); }
   100% {
-    color: #46ffa3;
-    font-size: 20.2px; } }
+    color: #46ffa3; } }
 
 @keyframes sectionPrinci {
   1% {
@@ -1112,78 +1321,312 @@ section iframe {
     transform: scale(1);
     box-shadow: 5px 9px 8px rgba(0, 0, 0, 0.555); } }
 
-@media screen and (min-width: 0px) and (max-width: 575px) {
+@media screen and (min-width: 0px) and (max-width: 359px) {
   .paginaInfo-Curso {
     display: none; } }
+
+@media screen and (min-width: 360px) and (max-width: 575px) {
+  .columnaicon {
+    display: none; }
+  .bootcont {
+    padding-top: 70px; }
+  .txt1 {
+    font-size: 15px; }
+  .paginaInfo-Curso {
+    margin-bottom: 400px;
+    background-image: url(../src/multimedia/fondos/fondo-principal.svg); }
+    .paginaInfo-Curso p {
+      font-size: 12px;
+      padding: 30px 10px 40px 10px; }
+    .paginaInfo-Curso h2 {
+      font-size: 25px;
+      padding: 10px 0px 10px 10px; }
+    .paginaInfo-Curso .contInfo .col-6 {
+      margin: 30px 0px 10px 0px; }
+    .paginaInfo-Curso .animImg {
+      transform: scale(1) translateX(20px) translateY(100px);
+      transition: 2s; }
+    .paginaInfo-Curso .animdan {
+      transform: translateX(0px) translateY(150px);
+      transition: 2s; }
+      .paginaInfo-Curso .animdan:hover {
+        transform: translateX(0px) translateY(0px); }
+    .paginaInfo-Curso .animkira {
+      transform: translateX(0px) translateY(50px);
+      transition: 2s; }
+      .paginaInfo-Curso .animkira:hover {
+        transform: translateX(0px) translateY(0px); }
+    .paginaInfo-Curso .animjean {
+      transform: translateX(0px) translateY(50px);
+      transition: 2s; }
+      .paginaInfo-Curso .animjean:hover {
+        transform: translateX(0px) translateY(0px); }
+    .paginaInfo-Curso .animjon {
+      transform: translateX(0px) translateY(150px);
+      transition: 2s; }
+      .paginaInfo-Curso .animjon:hover {
+        transform: translateX(0px) translateY(0px); }
+    .paginaInfo-Curso .col-10 {
+      margin: 50px 0px 50px 50px; }
+    .paginaInfo-Curso .main-Curso {
+      height: 3250px; }
+      .paginaInfo-Curso .main-Curso section {
+        height: 600px;
+        width: 400px;
+        margin: 100px 20px; }
+      .paginaInfo-Curso .main-Curso article {
+        margin: 180px 0px 10px 0px;
+        padding: 20px 10px 30px 10px;
+        border-radius: 20px;
+        transition: all 4s; }
+    .paginaInfo-Curso .main-Info {
+      height: 4700px; }
+      .paginaInfo-Curso .main-Info #id-Contact div {
+        padding: 40px 0px;
+        text-align: center;
+        margin: 0; }
+      .paginaInfo-Curso .main-Info #id-Contact b {
+        padding: 0;
+        margin: 0;
+        font-size: 15px; }
+      .paginaInfo-Curso .main-Info #id-Contact a {
+        padding: 0px -30px 0px 0px;
+        margin: 0px -30px 0px 0px; }
+      .paginaInfo-Curso .main-Info section {
+        height: 600px;
+        width: 1300px;
+        margin: 20px; }
+        .paginaInfo-Curso .main-Info section:hover {
+          animation: infoSec 4s; }
+    .paginaInfo-Curso .navCursos h1 {
+      font-size: 20px;
+      padding: 5px; }
+    .paginaInfo-Curso .navInfo h1 {
+      font-size: 20px;
+      padding: 5px; }
+    .paginaInfo-Curso .menuInfo {
+      justify-content: start;
+      padding: 0; }
+      .paginaInfo-Curso .menuInfo a {
+        padding: 0px 10px 10px 10px;
+        font-size: 8px; }
+      .paginaInfo-Curso .menuInfo li {
+        margin: 0px 0px; }
+    .paginaInfo-Curso .menuCursos {
+      justify-content: start;
+      padding: 0;
+      justify-content: start; }
+      .paginaInfo-Curso .menuCursos a {
+        padding: 0;
+        font-size: 8px; }
+      .paginaInfo-Curso .menuCursos li {
+        margin: 5px 0px; } }
 
 @media screen and (min-width: 576px) and (max-width: 768px) {
   .columnaicon {
     display: none; }
   .bootcont {
-    padding-top: -100px; }
-  .paginaInfo-Curso .contInfo .col-6 {
-    margin: 30px 0px 10px 0px; }
-  .paginaInfo-Curso .animImg {
-    transform: scale(1) translateX(0px) translateY(100px);
-    transition: 2s; }
-  .paginaInfo-Curso section {
-    margin-top: 200px; }
-  .paginaInfo-Curso .col-10 {
-    margin: 50px 0px 50px 50px; }
-  .paginaInfo-Curso .main-Curso {
-    height: 3250px; }
-    .paginaInfo-Curso .main-Curso section {
-      height: 600px;
-      width: 1400px;
-      margin-bottom: 200px; }
-  .paginaInfo-Curso .main-Info {
-    height: 4700px; }
-    .paginaInfo-Curso .main-Info #id-Contact div {
-      padding: 40px 0px;
-      text-align: center;
-      margin: 0; }
-    .paginaInfo-Curso .main-Info #id-Contact b {
+    padding-top: 70px; }
+  .txt1 {
+    font-size: 15px; }
+  .paginaInfo-Curso {
+    margin-bottom: 400px;
+    background-image: url(../src/multimedia/fondos/fondo-principal.svg); }
+    .paginaInfo-Curso p {
+      font-size: 12px;
+      padding: 30px 10px 40px 10px; }
+    .paginaInfo-Curso h2 {
+      font-size: 25px;
+      padding: 10px 0px 10px 10px; }
+    .paginaInfo-Curso .contInfo .col-6 {
+      margin: 30px 0px 10px 0px; }
+    .paginaInfo-Curso .animImg {
+      transform: scale(1) translateX(20px) translateY(100px);
+      transition: 2s; }
+    .paginaInfo-Curso .animdan {
+      transform: translateX(70px) translateY(70px);
+      transition: 2s; }
+      .paginaInfo-Curso .animdan:hover {
+        transform: translateX(0px) translateY(0px); }
+    .paginaInfo-Curso .animkira {
+      transform: translateX(70px) translateY(30px);
+      transition: 2s; }
+      .paginaInfo-Curso .animkira:hover {
+        transform: translateX(0px) translateY(0px); }
+    .paginaInfo-Curso .animjean {
+      transform: translateX(70px) translateY(30px);
+      transition: 2s; }
+      .paginaInfo-Curso .animjean:hover {
+        transform: translateX(0px) translateY(0px); }
+    .paginaInfo-Curso .animjon {
+      transform: translateX(70px) translateY(70px);
+      transition: 2s; }
+      .paginaInfo-Curso .animjon:hover {
+        transform: translateX(0px) translateY(0px); }
+    .paginaInfo-Curso .col-10 {
+      margin: 50px 0px 50px 50px; }
+    .paginaInfo-Curso .main-Curso {
+      height: 3250px; }
+      .paginaInfo-Curso .main-Curso section {
+        height: 400px;
+        width: 660px;
+        margin: 100px 8px 0px 10px; }
+      .paginaInfo-Curso .main-Curso article {
+        margin: 0px 0px 10px 0px;
+        padding: 50px 10px 30px 10px;
+        border-radius: 20px;
+        transition: all 4s; }
+    .paginaInfo-Curso .main-Info {
+      height: 4700px; }
+      .paginaInfo-Curso .main-Info #id-Contact div {
+        padding: 40px 0px;
+        text-align: center;
+        margin: 0; }
+      .paginaInfo-Curso .main-Info #id-Contact b {
+        padding: 0;
+        margin: 0;
+        font-size: 15px; }
+      .paginaInfo-Curso .main-Info #id-Contact a {
+        padding: 0px -30px 0px 0px;
+        margin: 0px -30px 0px 0px; }
+      .paginaInfo-Curso .main-Info section {
+        height: 400px;
+        width: 700px;
+        margin: 20px 0px 0px 30px; }
+        .paginaInfo-Curso .main-Info section:hover {
+          animation: infoSec 4s; }
+      .paginaInfo-Curso .main-Info article {
+        margin: 160px 0px 10px 0px;
+        padding: 50px 10px 30px 10px;
+        border-radius: 20px;
+        transition: all 4s; }
+    .paginaInfo-Curso .navCursos h1 {
+      font-size: 20px;
+      padding: 5px; }
+    .paginaInfo-Curso .navInfo h1 {
+      font-size: 20px;
+      padding: 5px; }
+    .paginaInfo-Curso .menuInfo {
+      justify-content: start;
+      padding: 0; }
+      .paginaInfo-Curso .menuInfo a {
+        padding: 0px 10px 10px 10px;
+        font-size: 8px; }
+      .paginaInfo-Curso .menuInfo li {
+        margin: 0px 0px; }
+    .paginaInfo-Curso .menuCursos {
+      justify-content: start;
       padding: 0;
-      margin: 0;
-      font-size: 15px; }
-    .paginaInfo-Curso .main-Info #id-Contact a {
-      padding: 0px -30px 0px 0px;
-      margin: 0px -30px 0px 0px; }
-    .paginaInfo-Curso .main-Info section {
-      height: 600px;
-      width: 1300px;
-      margin: 20px; }
-  .paginaInfo-Curso .navCursos h1 {
-    font-size: 30px;
-    padding: 5px; }
-  .paginaInfo-Curso .navInfo h1 {
-    font-size: 30px;
-    padding: 5px; }
-  .paginaInfo-Curso .menuInfo {
-    justify-content: start;
-    padding: 0; }
-    .paginaInfo-Curso .menuInfo a {
-      padding: 0px 20px 10px 10px;
-      font-size: 18px; }
-    .paginaInfo-Curso .menuInfo li {
-      margin: 10px 0px; }
-  .paginaInfo-Curso .menuCursos {
-    justify-content: start;
-    padding: 0;
-    justify-content: start; }
-    .paginaInfo-Curso .menuCursos a {
-      padding: 10px 50px 10px 30px;
-      font-size: 18px; }
-    .paginaInfo-Curso .menuCursos li {
-      margin: 5px 0px; } }
+      justify-content: start; }
+      .paginaInfo-Curso .menuCursos a {
+        padding: 0;
+        font-size: 8px; }
+      .paginaInfo-Curso .menuCursos li {
+        margin: 5px 0px; } }
 
-@media screen and (min-width: 769px) and (max-width: 1999px) {
+@media screen and (min-width: 769px) and (max-width: 1199px) {
   .paginaInfo-Curso {
     display: none; } }
 
 @media screen and (min-width: 1200px) and (max-width: 1400px) {
+  .bootcont {
+    padding-top: 70px; }
+  .txt1 {
+    font-size: 25px; }
   .paginaInfo-Curso {
-    display: block; } }
+    margin-bottom: 400px;
+    background-image: url(../src/multimedia/fondos/fondo-principal.svg); }
+    .paginaInfo-Curso p {
+      font-size: 20px;
+      padding: 30px 10px 40px 10px; }
+    .paginaInfo-Curso h2 {
+      font-size: 35px;
+      padding: 10px 0px 10px 10px; }
+    .paginaInfo-Curso .contInfo .col-6 {
+      margin: 30px 0px 10px 0px; }
+    .paginaInfo-Curso .animImg {
+      transform: scale(1) translateX(20px) translateY(100px);
+      transition: 2s; }
+    .paginaInfo-Curso .animdan {
+      transform: translateX(80px) translateY(70px);
+      transition: 2s; }
+      .paginaInfo-Curso .animdan:hover {
+        transform: translateX(0px) translateY(0px); }
+    .paginaInfo-Curso .animkira {
+      transform: translateX(2px) translateY(50px);
+      transition: 2s; }
+      .paginaInfo-Curso .animkira:hover {
+        transform: translateX(0px) translateY(0px); }
+    .paginaInfo-Curso .animjean {
+      transform: translateX(2px) translateY(50px);
+      transition: 2s; }
+      .paginaInfo-Curso .animjean:hover {
+        transform: translateX(0px) translateY(0px); }
+    .paginaInfo-Curso .animjon {
+      transform: translateX(80px) translateY(70px);
+      transition: 2s; }
+      .paginaInfo-Curso .animjon:hover {
+        transform: translateX(0px) translateY(0px); }
+    .paginaInfo-Curso .col-10 {
+      margin: 50px 0px 50px 50px; }
+    .paginaInfo-Curso .main-Curso {
+      height: 3250px; }
+      .paginaInfo-Curso .main-Curso section {
+        height: 600px;
+        width: 1400px;
+        margin: 50px 0px; }
+      .paginaInfo-Curso .main-Curso article {
+        margin: 160px 0px 10px 0px;
+        padding: 50px 10px 30px 10px;
+        border-radius: 20px;
+        transition: all 4s; }
+    .paginaInfo-Curso .main-Info {
+      height: 4700px; }
+      .paginaInfo-Curso .main-Info #id-Contact div {
+        padding: 40px 0px;
+        text-align: center;
+        margin: 0; }
+      .paginaInfo-Curso .main-Info #id-Contact b {
+        padding: 0;
+        margin: 0;
+        font-size: 15px; }
+      .paginaInfo-Curso .main-Info #id-Contact a {
+        padding: 0px -30px 0px 0px;
+        margin: 0px -30px 0px 0px; }
+      .paginaInfo-Curso .main-Info section {
+        height: 600px;
+        width: 1300px;
+        margin: 50px 0px; }
+        .paginaInfo-Curso .main-Info section:hover {
+          animation: infoSec 4s; }
+      .paginaInfo-Curso .main-Info article {
+        margin: 160px 0px 10px 0px;
+        padding: 50px 10px 30px 10px;
+        border-radius: 20px;
+        transition: all 4s; }
+    .paginaInfo-Curso .navCursos h1 {
+      font-size: 30px;
+      padding: 5px; }
+    .paginaInfo-Curso .navInfo h1 {
+      font-size: 30px;
+      padding: 5px; }
+    .paginaInfo-Curso .menuInfo {
+      justify-content: start;
+      padding: 0; }
+      .paginaInfo-Curso .menuInfo a {
+        padding: 0px 10px 10px 10px;
+        font-size: 15px; }
+      .paginaInfo-Curso .menuInfo li {
+        margin: 10px 0px; }
+    .paginaInfo-Curso .menuCursos {
+      justify-content: start;
+      padding: 0;
+      justify-content: start; }
+      .paginaInfo-Curso .menuCursos a {
+        padding: 0;
+        font-size: 18px; }
+      .paginaInfo-Curso .menuCursos li {
+        margin: 5px 0px; } }
 
 * {
   margin: 0;
@@ -1200,7 +1643,7 @@ section iframe {
       border-radius: 10px;
       text-align: center;
       margin-top: -33px; }
-    * body h2 {
+    * body h4 {
       border-radius: 10px;
       text-align: center;
       margin-top: -33px; }
